@@ -1,0 +1,53 @@
+.footerbgcolor {
+  background-color: rgb(6, 7, 63);
+}
+.fontsize {
+  font-size: 13px;
+  padding: 5px;
+  list-style: none;
+}
+.fontsize a {
+  text-decoration: none;
+  color: rgb(148, 155, 161);
+  font-weight: 500;
+  padding-top: 5px;
+}
+.fontsize a:hover {
+  color: blue;
+}
+.footertwatter {
+  background-color: black;
+}
+.footerspace li {
+  font-size: large;
+  list-style: none;
+  padding: 10px;
+}
+.footerspace {
+  font-size: 30px;
+  padding: 10px;
+  justify-content: space-around;
+  color: aliceblue;
+}
+.footerspace li:hover
+{
+  color:darkorange;
+
+}
+.Aihover:hover
+{
+  color:darkorange;
+
+}
+.cardbgimage {
+  background-color: rgb(6, 7, 63);
+  color: aliceblue;
+  border: 2px solid blue;
+}
+.cardbgimage:hover {
+  background-color: rgba(2, 16, 202, 0.877);
+}
+.footerDetails {
+}
+.footerdetailstext li {
+}

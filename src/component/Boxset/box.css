@@ -1,0 +1,82 @@
+.boxbg {
+  background-color: rgb(224, 231, 245);
+}
+
+/* .textblock {
+  display: none;
+}
+.boxhover {
+  text-align: center;
+}
+.boxhover:hover .textblock {
+  display: block;
+} */
+/* .no {
+  display: none;
+}
+.yes {
+  display: block;
+}
+.yes:hover .no {
+  display: block;
+  width: 100px;
+  height: 400px;
+  background: red;
+  transition: width 5s;
+} */
+
+.positionset {
+  position: relative;
+  top: -5rem;
+}
+
+.firstbox {
+  text-align: center;
+  
+}
+.firstbox :hover {
+  transition-duration: 0.8s;
+  transform: scale(1.2);
+}
+.secondbox {
+  display: none;
+}
+.firstbox:hover .firstbox {
+  display: none;
+}
+.firstbox:hover .secondbox {
+  display: block;
+}
+.subtitletext
+{
+  font-size: 15px;
+  height: 80px;
+  /* background-color: ; */
+}
+
+/* cards group in use */
+.cardscolor h1{
+  color: aliceblue;
+}
+.cardscolor
+{
+  background-color: rgb(30, 43, 231);
+  color: aliceblue;
+}
+.cardslogoset
+{
+font-size: 40px;
+}
+
+/* number speak css */
+.numberbody
+{
+  box-shadow: 5px -1px 20px rgb(86, 86, 89);
+
+}
+.numbertitle
+{
+  color: blue;
+  font-weight:800 ;
+
+}

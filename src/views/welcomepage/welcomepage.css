@@ -1,0 +1,125 @@
+.experiencebgcolor {
+    background-color: rgb(22, 45, 66);
+    color: #fff;
+}
+
+.page-containe section {
+    padding: 80px 0px;
+}
+
+.paddingbottom {
+    padding-bottom: 80px;
+}
+
+.activtiesbgcolor {
+    background-color:
+        rgb(245, 245, 245);
+}
+
+.iconshadow {
+    box-shadow: -15px -15px 20px rgb(237, 221, 221);
+    border-radius: 15px;
+}
+
+.iconshadow:hover {
+    background-color: rgb(3, 45, 226);
+    /* translate: -10px -10px 10px ; */
+    transform: scale(1.12);
+    transition-duration: 1s;
+
+}
+
+/* app shape */
+.appshapebgcolor {
+    background-color: rgb(250, 250, 250);
+}
+
+.cardsborder1 {
+    border: 4px dashed rgb(140, 133, 133);
+    border-radius: 10px;
+}
+
+.cardbodyborder1 {
+    border: 2px solid rgb(226, 216, 216);
+    border-radius: 10px;
+
+}
+
+.icontitletext11 {
+    font-size: 20px;
+    color: rgb(255, 3, 3);
+}
+
+
+.linktext1 {
+    color: rgb(3, 45, 226);
+}
+
+.smalltext1 {
+    height: 90px;
+    /* background-color: crimson; */
+}
+
+
+.cardsborder1:hover .smalltext1 {
+    color: #fff;
+}
+
+.cardsborder1:hover h1 {
+    color: #fff;
+}
+
+.cardsborder1:hover .icontitletext11 {
+    color: rgb(245, 164, 3);
+}
+
+.cardsborder1:hover .cardbodyborder1 {
+    background-color: rgb(6, 21, 114);
+    border: 4px solid rgb(6, 21, 114);
+}
+
+.cardsborder1:hover {
+    border: 4px dashed rgb(6, 21, 114);
+}
+
+/* fasinating */
+.fasinatebgcolor {
+    background-color: rgb(245, 245, 245);
+}
+
+.imagebgcolor1 {
+    background-color: rgb(233, 241, 255);
+}
+
+.imagefixed1 {
+    width: 45px;
+}
+
+.cardhovers1 {
+    box-shadow: 10px -5px 15px rgb(86, 86, 89);
+}
+
+.cardhovers1:hover {
+    background-color: rgb(3, 45, 226);
+    transition-duration: 2s, 1s;
+    transition-property: "margin-right";
+    color: #fff;
+}
+
+/* number speak csss */
+.numberbgcolor {
+    background-color: rgb(245, 247, 251);
+}
+
+/* .first {
+    width: 100px;
+    height: 40px;
+}
+
+.second {
+    width: 100px;
+    height: 40px;
+    border: 4px solid red;
+    margin-top: -40px;
+    margin-left: 20px;
+    margin: 25px; */
