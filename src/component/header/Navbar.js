@@ -6,7 +6,7 @@ import amplelogo from "../../assets/logo/amplworkLogo.png";
 import '../header/Allcss.css'
 const TopNavbar = (props) => {
   return (
-    <Navbar expand="lg" className="bgopicity">
+    <Navbar expand="lg" className="bgopicity" style={{background:'transparent'}}>
       <Container fluid>
         <Navbar.Brand href="#" className="col-2  ">
           <img src={amplelogo} width="230px" />{" "}

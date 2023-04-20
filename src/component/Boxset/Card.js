@@ -37,7 +37,7 @@ const CardsComponent = (props) => {
 export default CardsComponent;
 
 export const AppcardsGroup = (propsvalue) => {
-  console.warn("========>props icon", propsvalue.text);
+  // console.warn("========>props icon", propsvalue.text);
   return (
     <>
       <Card className="text-center justify-content-between m-3 rounded py-3 border border-2 iconshadow">

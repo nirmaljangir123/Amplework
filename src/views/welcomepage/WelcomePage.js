@@ -4,11 +4,24 @@ import "../welcomepage/welcomepage.css";
 import { TopNavbar, Welcome } from "../../component";
 import Ploygan from "../../component/polygan/Ploygan";
 import Footer from "../footer/Footer";
+// png bg image
 import home from "../../assets/pnglogoimage/homebgimage.jpg";
-
+import laptopman from "../../assets/pnglogoimage/laptopman.png";
+import franqbg from "../../assets/pnglogoimage/frenqutelybg.png";
+import groupimage from "../../assets/pnglogoimage/groupbgimage.png";
+import linkdin from "../../assets/Developerphotos/linkdinCeo.png";
+import Iars from "../../assets/Developerphotos/lars_platzdasch.png";
+import ken from "../../assets/Developerphotos/ken_murai.png";
+import imo from "../../assets/Developerphotos/imo_etuk.png";
+import shokesbgimage from "../../assets/pnglogoimage/shokesbgimage.png";
+import shokesimage from "../../assets/pnglogoimage/shokesimage.png";
 // cards component import
 import Cards from "../";
 import CardGroup from "react-bootstrap/CardGroup";
+
+// carsole component
+import Carousel from "react-bootstrap/Carousel";
+
 // cards react icon
 import {
   GrIteration,
@@ -21,26 +34,51 @@ import {
   GrSystem,
   GrCloudSoftware,
   GrVirtualMachine,
+  GrGooglePlay,
+  GrAppleAppStore,
+  GrApple,
 } from "react-icons/gr";
 import CardsComponent, { NumberSpeak } from "../../component/Boxset/Card";
 import Apparrow from "../../assets/pnglogoimage/Apparrow.png";
-import { IoBugOutline } from "react-icons/io";
-import { BsBug } from "react-icons/bs";
+import { IoLogoAppleAppstore, IoIosPlayCircle } from "react-icons/io";
+import {
+  BsBug,
+  BsCheck2Circle,
+  BsCheck2All,
+  BsArrowUpRight,
+} from "react-icons/bs";
 import { BiSupport } from "react-icons/bi";
 import { MdOutlineSettingsRemote } from "react-icons/md";
-import { GiCoolSpices } from "react-icons/gi";
+import { GiCoolSpices, GiCheckMark } from "react-icons/gi";
 import { MdOutlineAppShortcut } from "react-icons/md";
 import { SiAzuredataexplorer } from "react-icons/si";
 import { RiApps2Fill } from "react-icons/ri";
 import { SlGameController } from "react-icons/sl";
-
+import { ImCompass } from "react-icons/im";
+import { FcOk } from "react-icons/fc";
+import { AiFillLinkedin } from "react-icons/ai";
+import { BsGooglePlay } from "react-icons/bs";
 //  component
-import { MyButton } from "../../component/button/Button";
+import {
+  Buttondata,
+  FranqButton,
+  MyButton,
+  franqbutton,
+} from "../../component/button/Button";
 import homebgimage from "../../assets/pnglogoimage/homebgimage.jpg";
 import { VscVersions } from "react-icons/vsc";
 import { AppcardsGroup } from "../../component/Boxset/Card";
-import { Active, Cardsdata, Fascinate } from "./Mockup";
+import Accordion from "react-bootstrap/Accordion";
+
 // mockup map
+import {
+  Active,
+  Cardsdata,
+  Digitalize,
+  Fascinate,
+  FrequentlyAsked,
+  TrustedDeveloper,
+} from "./Mockup";
 
 const WelcomePage = () => {
   return (
@@ -58,16 +96,6 @@ const WelcomePage = () => {
         >
           <div className="container">
             <div className=" row text-center">
-              {/* <p
-                className="text-uppercase text-warning text-center pt-5 fw-semibold mb-0"
-                style={{ fontSize: "1rem" }}
-              >
-                application mantainance and support
-              </p>
-              <p className="text-center fs-3 col-8 text-light fw-semibold">
-                Top classs application mantainace and support service for
-                error-free, hight performing applications
-              </p> */}
               <p className="text-uppercase text-warning text-center fw-semibold">
                 {" "}
                 Application mantainance and support
@@ -212,25 +240,6 @@ const WelcomePage = () => {
                       </div>
                     </div>
                   ))}
-                  {/* <div className="d-flex">
-                      <div className="p-3">
-                        <h1>
-                          <BsBug />
-                        </h1>
-                      </div>
-                      <p className="align-self-center">
-                        
-                      </p>
-                    </div>
-                  </div>
-                  <div className="col-sm-12 col-lg-6">
-                    <div className="d-flex ">
-                      <h1>
-                        <GrSettingsOption />
-                      </h1>
-                      <p className="align-self-center">Quality Checks</p>
-                    </div>
-                  </div> */}
                 </div>
               </div>
             </div>
@@ -389,7 +398,423 @@ const WelcomePage = () => {
             </div>
           </div>
         </section>
+        {/* section 1001010010010101 */}
+        <section className="freaqbgcolor">
+          <div className="container">
+            <div className="text-center">
+              <h2 className="px-5 pb-5">
+                Are you searching for a dedicated technology partner, not just a
+                service provider?
+              </h2>
+            </div>
+            <div className="row ">
+              <div className="col-sm-12 col-md-7">
+                <p style={{ letterSpacing: "1px", lineHeight: "1.8" }}>
+                  Our clients generated more than $50 million in revenues by
+                  creating seamless mobile applications that run without any
+                  bugs or glitches. Thus, we continue to upgrade our services to
+                  support clients in generating higher revenue for operations.
+                </p>
+                <div className="">
+                  <div className="d-flex">
+                    <div>
+                      <BsCheck2Circle className="BsCheck2Circle1" />
+                    </div>
+                    <div className="px-2 fw-semibold">
+                      <p> Personalized business services.</p>
+                    </div>
+                  </div>
+                  <div className="d-flex">
+                    <div>
+                      <BsCheck2Circle className="BsCheck2Circle1" />
+                    </div>
+                    <div className="px-2 fw-semibold">
+                      <p> Advanced practices for DevOps. .</p>
+                    </div>
+                  </div>{" "}
+                  <div className="d-flex">
+                    <div>
+                      <BsCheck2Circle className="BsCheck2Circle1" />
+                    </div>
+                    <div className="px-2 fw-semibold">
+                      <p> Proficiency in AI/ML/Blockchain Solutions.</p>
+                    </div>
+                  </div>{" "}
+                  <div className="d-flex">
+                    <div>
+                      <BsCheck2Circle className="BsCheck2Circle1" />
+                    </div>
+                    <div className="px-2 fw-semibold">
+                      <p> Exclusive support for digital transformation.</p>
+                    </div>
+                  </div>{" "}
+                  <div className="d-flex">
+                    <div>
+                      <BsCheck2Circle className="BsCheck2Circle1" />
+                    </div>
+                    <div className="px-2 fw-semibold">
+                      <p> Large scale & complex app building.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-sm-12 col-md-5">
+                <img src={laptopman} alt="no pic" className="img-fluid" />
+              </div>
+            </div>
+          </div>
+        </section>
+        {/*section 11 11 11 11 11 11 11 11 11  */}
+        <section
+          className=""
+          style={{
+            backgroundImage: `Url(${franqbg})`,
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+          }}
+        >
+          <div className="container">
+            <div className="text-center">
+              <h2 className="">Frequently Asked Questions</h2>
+            </div>
+            <div className="row pt-5">
+              {FrequentlyAsked.map((varient, key) => (
+                <div className="col-sm-12 col-md-6 my-2 ">
+                  <Accordion className="frenqhovers1">
+                    <Accordion.Item eventKey={varient.key}>
+                      <Accordion.Header>
+                        <p className="fw-semibold">{varient.text}</p>
+                      </Accordion.Header>
+                      <Accordion.Body>{varient.smalltext}</Accordion.Body>
+                    </Accordion.Item>
+                  </Accordion>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
 
+        {/* section 121212121232212 */}
+        <section className="dedicatedbgcolor">
+          <div className="container">
+            <div>
+              {/* <img src={groupimage} alt="no p ic" className="img-fluid"/> */}
+              <div
+                style={{
+                  backgroundImage: `Url(${groupimage})`,
+                  backgroundRepeat: "no-repeat",
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  position: "relative",
+                  borderRadius: "20px",
+                }}
+                className="row p-4 text-light justify-content-end"
+              >
+                <div className="col-sm-12 col-md-7">
+                  <h2>Dedicated Full-stack developer?</h2>
+                  <p>
+                    Let's Discuss Your Project how we will transform your idea
+                    into an amazing digital product?
+                  </p>
+                </div>
+
+                <div className="col-sm-12 col-md-5 align-self-center text-center">
+                  <FranqButton
+                    varient="primary"
+                    data="Get 2 Week Free Trial"
+                    logo={ImCompass()}
+                  />
+                </div>
+              </div>
+            </div>
+            <div className="text-center">
+              <h2 className="pt-5 pb-3">Trusted and Skilled Developer</h2>
+              <p>
+                Our developers are ready to join your team and build amazing
+                mobile & web apps.
+              </p>
+              <div className="px-5 ">
+                <div className="row px-5 ">
+                  {TrustedDeveloper.map((Developer, key) => (
+                    <div className="col-sm-12 col-md-6 col-lg-3 p-3">
+                      <div>
+                        <img
+                          src={Developer.img}
+                          alt="no pic"
+                          className="trustedboxshadow img-fluid border border-3"
+                          style={{ borderRadius: "30% 0% 30% 0%" }}
+                        />
+                      </div>
+                      <div
+                        className=" text-dark fw-bold position-sticky"
+                        style={{
+                          marginTop: "-25px",
+                          backgroundColor: "#fff",
+                          width: "75%",
+                          borderRadius: "10px",
+                        }}
+                      >
+                        <p className="">
+                          {Developer.name}
+                          <span>{FcOk()}</span>
+                        </p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* section 131313133331  Prowdalyshowcase */}
+        <section className="prowdbgcolor">
+          <div className="container text-center">
+            <h2 className="">We Proudly Showcase - Our Client Appreciations</h2>
+            <Carousel>
+              <Carousel.Item interval={1000}>
+                <div className="row  pt-5">
+                  <div className="col-sm-12 col-lg-6 pt-5 pb-3 px-5">
+                    <div className="linkdinborder " style={{ width: "90%" }}>
+                      <img
+                        className="linkdinimageshadow img-fluid "
+                        src={linkdin}
+                        style={{
+                          position: "relative",
+                          top: "-40px",
+                          left: "-70px",
+                          borderRadius: "15PX",
+                          width: "95%",
+                          marginLeft: "30px",
+                        }}
+                      />
+                    </div>
+                  </div>
+                  <div className="col-sm-12 col-lg-6">
+                    <h5 className="py-4">
+                      Amplework is a great team to work with, highly
+                      recommended.
+                    </h5>
+                    <p>
+                      Flawless Plank was an AI based fitness application and we
+                      are glad we get a chance to work on this project with
+                      Amplework. They have excellent skills in building mobile
+                      apps and willing to work around issues to solve them ..
+                      Highly Recommended!
+                    </p>
+                    <h5 className="pt-5">MANU NAMBOODIRI</h5>
+                    <p>Founder, Flawless Plank</p>
+
+                    <h3 className="text-primary">{AiFillLinkedin()}</h3>
+                  </div>
+                </div>
+              </Carousel.Item>
+              <Carousel.Item interval={1000}>
+                <div className="row  pt-5">
+                  <div className="col-sm-12 col-lg-6 pt-5 pb-3 px-5">
+                    <div className="linkdinborder " style={{ width: "90%" }}>
+                      <img
+                        className="linkdinimageshadow img-fluid "
+                        src={Iars}
+                        style={{
+                          position: "relative",
+                          top: "-40px",
+                          left: "-70px",
+                          borderRadius: "15PX",
+                          width: "95%",
+                          marginLeft: "30px",
+                        }}
+                      />
+                    </div>
+                  </div>
+                  <div className="col-sm-12 col-lg-6">
+                    <h5 className="py-4">
+                      Amplework is a great team to work with, highly
+                      recommended.
+                    </h5>
+                    <p>
+                      Flawless Plank was an AI based fitness application and we
+                      are glad we get a chance to work on this project with
+                      Amplework. They have excellent skills in building mobile
+                      apps and willing to work around issues to solve them ..
+                      Highly Recommended!
+                    </p>
+                    <h5 className="pt-5">MANU NAMBOODIRI</h5>
+                    <p>Founder, Flawless Plank</p>
+
+                    <h3 className="text-primary">{AiFillLinkedin()}</h3>
+                  </div>
+                </div>
+              </Carousel.Item>
+              <Carousel.Item interval={1000}>
+                <div className="row  pt-5">
+                  <div className="col-sm-12 col-lg-6 pt-5 pb-3 px-5">
+                    <div className=" linkdinborder " style={{ width: "90%" }}>
+                      <img
+                        className="linkdinimageshadow img-fluid "
+                        src={ken}
+                        style={{
+                          position: "relative",
+                          top: "-40px",
+                          left: "-70px",
+                          borderRadius: "15PX",
+                          width: "95%",
+                          marginLeft: "30px",
+                        }}
+                      />
+                    </div>
+                  </div>
+                  <div className="col-sm-12 col-lg-6">
+                    <h5 className="py-4">
+                      Amplework is a great team to work with, highly
+                      recommended.
+                    </h5>
+                    <p>
+                      Flawless Plank was an AI based fitness application and we
+                      are glad we get a chance to work on this project with
+                      Amplework. They have excellent skills in building mobile
+                      apps and willing to work around issues to solve them ..
+                      Highly Recommended!
+                    </p>
+                    <h5 className="pt-5">MANU NAMBOODIRI</h5>
+                    <p>Founder, Flawless Plank</p>
+
+                    <h3 className="text-primary">{AiFillLinkedin()}</h3>
+                  </div>
+                </div>
+              </Carousel.Item>
+              <Carousel.Item interval={1000}>
+                <div className="row  pt-5">
+                  <div className="col-sm-12 col-lg-6 pt-5 pb-3 px-5">
+                    <div className="linkdinborder  " style={{ width: "90%" }}>
+                      <img
+                        className="linkdinimageshadow img-fluid "
+                        src={imo}
+                        style={{
+                          position: "relative",
+                          top: "-40px",
+                          left: "-70px",
+                          borderRadius: "15PX",
+                          width: "95%",
+                          marginLeft: "30px",
+                        }}
+                      />
+                    </div>
+                  </div>
+                  <div className="col-sm-12 col-lg-6">
+                    <h5 className="py-4">
+                      Amplework is a great team to work with, highly
+                      recommended.
+                    </h5>
+                    <p>
+                      Flawless Plank was an AI based fitness application and we
+                      are glad we get a chance to work on this project with
+                      Amplework. They have excellent skills in building mobile
+                      apps and willing to work around issues to solve them ..
+                      Highly Recommended!
+                    </p>
+                    <h5 className="pt-5">MANU NAMBOODIRI</h5>
+                    <p>Founder, Flawless Plank</p>
+
+                    <h3 className="text-primary">{AiFillLinkedin()}</h3>
+                  </div>
+                </div>
+              </Carousel.Item>
+            </Carousel>
+          </div>
+        </section>
+
+        {/* section 14141414414141441 shokes page */}
+        <section className="shokesbgcolor py-4 text-center">
+          <h2>Portifolio of our Accomplishments</h2>
+        </section>
+        <section
+          style={{
+            backgroundImage: `Url(${shokesbgimage})`,
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        >
+          <div className="container ">
+            <div className="row ">
+              <div className="col-sm-12 col-lg-8 text-light">
+                <h2>Sweatcoin</h2>
+                <p
+                  className="pt-4 "
+                  style={{ lineHeight: "2", wordSpacing: "3px" }}
+                >
+                  A new breed of step counter and activity tracker that converts
+                  your steps into a currency you can spend on gadgets, sports
+                  and fitness kit, services and experiences. You can exchange
+                  them with friends and family.
+                </p>
+                <div className="d-flex py-4">
+                  <h5 className="align-self-center">Available on</h5>
+                  <h2 className="px-4">{BsGooglePlay()}</h2>
+                  <h2>{GrApple()}</h2>
+                </div>
+
+                <div className="d-flex ">
+                  <div>
+                    <h2>50+</h2>
+                    <p>Downloads</p>
+                  </div>
+                  <h2 className="px-4">|</h2>
+                  <div>
+                    <h2>4.6/5</h2>
+                    <p>Rating</p>
+                  </div>{" "}
+                  <h2 className="px-4">|</h2>
+                  <div>
+                    <h2>$20M</h2>
+                    <p>Funding Raised</p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-sm-12 col-lg-4">
+                <img src={shokesimage} alt="no pic" className="img-fluid" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* section 1515151515151  Digitalize */}
+        <section className="shokesbgcolor">
+          <div className="container text-center ">
+            <h2 className="pb-5 fw-semibold">
+              Digitalize Your Product Idea - Learn More About MVP
+            </h2>
+
+            <div className="row">
+              {Digitalize.map((data) => (
+                <div className="col-sm-12 col-md-4">
+                  {/* <img src={data.img} alt="" className="img-fluid" />
+                  <p>{data.text}</p> */}
+                  <figure>
+                    <img
+                      src={data.img}
+                      alt=""
+                      className="img-fluid"
+                      style={{ height: "220px",borderRadius:"15px" }}
+                    />
+                    <figcaption>{data.text}</figcaption>
+                  </figure>
+                </div>
+              ))}
+            </div>
+            <div>
+              <FranqButton varient="primary" data="Read all post" />
+            </div>
+          </div>
+        </section>
+
+
+
+        {/* form validation  */}
+        <section className="formvalidation">
+
+        </section>
         <section></section>
       </div>
       <Footer />
@@ -398,32 +823,3 @@ const WelcomePage = () => {
 };
 
 export default WelcomePage;
-
-{
-  /* <div className="col-lg-6">
-<div className="first pt-2">
-  <img src={homebgimage} alt="" className="img-fluid" />
-</div>
-<div className="second bg-success"></div>
-</div> */
-}
-// const Active = [
-//   {
-//     logo: Apparrow(),
-//     bgcolor: rgb(240, 100, 102),
-//     backbgcolor: rgb(255, 225, 225),
-//     text: "",
-//   },
-//   {
-//     logo: Apparrow(),
-//     bgcolor: rgb(240, 100, 102),
-//     backbgcolor: rgb(255, 225, 225),
-//     text: "",
-//   },
-//   {
-//     logo: Apparrow(),
-//     bgcolor: rgb(240, 100, 102),
-//     backbgcolor: rgb(255, 225, 225),
-//     text: "",
-//   },
-// ];

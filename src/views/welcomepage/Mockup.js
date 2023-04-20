@@ -31,6 +31,13 @@ import Apparrow from "../../assets/pnglogoimage/Apparrow.png";
 import Appgrouth from "../../assets/pnglogoimage/Approuth.png";
 import Apprecycle from "../../assets/pnglogoimage/Apprecycle.png";
 import Appstorgae from "../../assets/pnglogoimage/Appstorage.png";
+import Nirmal from "../../assets/Developerphotos/nirmal.jpg";
+import Jitu from "../../assets/Developerphotos/jitu.jpg";
+import Rajander from "../../assets/Developerphotos/rajander.jpg";
+import Rahul from "../../assets/Developerphotos/rahul.jpg";
+import MobileDev from "../../assets/pnglogoimage/Mobile-Devops-Development.png";
+import chatbot from "../../assets/pnglogoimage/Chatbots-in-Healthcare.png";
+import Foldmobile from "../../assets/pnglogoimage/Foldable-Smart-Phone-Mobile-App-Development.png";
 
 export const Active = [
   {
@@ -145,9 +152,85 @@ export const Cardsdata = [
   },
 ];
 
-export const NumberSpeak = [
-  { bluetext: "10-15 Mins", text: "Minimum Incident Response Time" },
-  { bluetext: "2-3 Hours", text: "insident solution Time" },
-  { bluetext: "350+", text: "" },
-  { bluetext: "100%", text: "" },
+export const FrequentlyAsked = [
+  {
+    key: 0,
+    text: "How skilled are your dedicated developers?",
+    smalltext:
+      "At Amplework, we feature a team of highly skilled and experienced dedicated developers having several years of expertise in the field of mobile app development solutions.",
+  },
+  {
+    key: 1,
+    text: "How skilled are your dedicated developers?",
+    smalltext:
+      "At Amplework, we feature a team of highly skilled and experienced dedicated developers having several years of expertise in the field of mobile app development solutions.",
+  },
+  {
+    key: 2,
+    text: "How skilled are your dedicated developers?",
+    smalltext:
+      "At Amplework, we feature a team of highly skilled and experienced dedicated developers having several years of expertise in the field of mobile app development solutions.",
+  },
+  {
+    key: 3,
+    text: "How skilled are your dedicated developers?",
+    smalltext:
+      "At Amplework, we feature a team of highly skilled and experienced dedicated developers having several years of expertise in the field of mobile app development solutions.",
+  },
+  {
+    key: 4,
+    text: "How skilled are your dedicated developers?",
+    smalltext:
+      "At Amplework, we feature a team of highly skilled and experienced dedicated developers having several years of expertise in the field of mobile app development solutions.",
+  },
+  {
+    key: 5,
+    text: "How skilled are your dedicated developers?",
+    smalltext:
+      "At Amplework, we feature a team of highly skilled and experienced dedicated developers having several years of expertise in the field of mobile app development solutions.",
+  },
+  {
+    key: 6,
+    text: "How skilled are your dedicated developers?",
+    smalltext:
+      "At Amplework, we feature a team of highly skilled and experienced dedicated developers having several years of expertise in the field of mobile app development solutions.",
+  },
+  {
+    key: 7,
+    text: "How skilled are your dedicated developers?",
+    smalltext:
+      "At Amplework, we feature a team of highly skilled and experienced dedicated developers having several years of expertise in the field of mobile app development solutions.",
+  },
+];
+
+export const TrustedDeveloper = [
+  {
+    img: Nirmal,
+    name: "Nirmal",
+    // job:"sec Soft.Delp"
+  },
+  {
+    img: Jitu,
+    name: "Jitender",
+    // job:"sec Soft.Delp"
+  },
+  {
+    img: Rajander,
+    name: "Rajander ",
+    // job:"sec Soft.Delp"
+  },
+  {
+    img: Rahul,
+    name: "Rahul ",
+    // job:"sec Soft.Delp"
+  },
+];
+
+export const Digitalize = [
+  {
+    img: MobileDev,
+    text: "Chatbots in Healthcare Advantages,Disadvantages Applications & their Future",
+  },
+  { img: chatbot, text: "Foldable Smartphone App Development 5 Dos" },
+  { img: Foldmobile, text: "Mobile DevOps Advantages & Challenges" },
 ];
