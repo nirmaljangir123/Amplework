@@ -168,3 +168,14 @@
     background-color:
         rgb(243, 246, 255);
 }
+
+input {
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: blue
+}
+
+input:focus {
+    border-color: green;
+
+}

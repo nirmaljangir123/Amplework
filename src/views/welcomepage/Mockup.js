@@ -9,11 +9,12 @@ import {
   GrSystem,
   GrCloudSoftware,
   GrVirtualMachine,
+  GrOptimize,
 } from "react-icons/gr";
 import { IoBugOutline } from "react-icons/io";
-import { BsBug } from "react-icons/bs";
+import { BsBug, BsStopwatch } from "react-icons/bs";
 import { BiSupport } from "react-icons/bi";
-import { MdOutlineSettingsRemote } from "react-icons/md";
+import { MdOutlineSettingsRemote, MdGroups } from "react-icons/md";
 import {
   FcSmartphoneTablet,
   FcTabletAndroid,
@@ -23,7 +24,8 @@ import {
   FcOrgUnit,
 } from "react-icons/fc";
 import { FiTarget } from "react-icons/fi";
-
+import { Fa500Px, FaBuffer } from "react-icons/fa";
+// FaLayerGroup,GrOptimize,MdGroups,BsStopwatch,Fa500Px
 // png image
 import Applock from "../../assets/pnglogoimage/Applock.png";
 import Appbug from "../../assets/pnglogoimage/Appbug.png";
@@ -38,7 +40,9 @@ import Rahul from "../../assets/Developerphotos/rahul.jpg";
 import MobileDev from "../../assets/pnglogoimage/Mobile-Devops-Development.png";
 import chatbot from "../../assets/pnglogoimage/Chatbots-in-Healthcare.png";
 import Foldmobile from "../../assets/pnglogoimage/Foldable-Smart-Phone-Mobile-App-Development.png";
-
+import pksir from "../../assets/Developerphotos/pksir.png";
+import sksir from "../../assets/Developerphotos/sksir.png";
+import supermaam from "../../assets/Developerphotos/novamaam.png";
 export const Active = [
   {
     logo: BsBug(),
@@ -233,4 +237,21 @@ export const Digitalize = [
   },
   { img: chatbot, text: "Foldable Smartphone App Development 5 Dos" },
   { img: Foldmobile, text: "Mobile DevOps Advantages & Challenges" },
+];
+
+export const QuickStart = [
+  { bigtext: "170+", ican: MdGroups(), text: "Successful projects" },
+  { bigtext: "92%", ican: BsStopwatch(), text: "Client retention" },
+  {
+    bigtext: "$200M+",
+    ican: GrOptimize(),
+    text: "Our clients overall revenue",
+  },
+  { bigtext: "1M+", ican: Fa500Px(), text: "Work hours" },
+];
+
+export const overflowimage = [
+  { pk: pksir, text: "Santosh Singh CEO" },
+  { pk: sksir, text: "Prakash Saini CTO" },
+  { pk: supermaam, text: "Supernova CXO" },
 ];

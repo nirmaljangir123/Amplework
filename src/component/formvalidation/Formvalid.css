@@ -1,0 +1,22 @@
+.formfieldcolor
+{
+    background-color: rgb(243, 245, 255);
+    border: 0;
+    color:rgb(146, 144, 144);
+    font-size: 15px;
+}
+.overflowclass
+{
+    display: flex;
+    overflow: auto;
+    overflow-x: scroll;
+}
+.recaptchshadow {
+    box-shadow: 10px 5px 10px rgb(166, 167, 194);
+
+}
+.paddingoverflow
+{
+   padding-right: 20px;
+    
+}
