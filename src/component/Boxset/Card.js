@@ -5,10 +5,12 @@ import { AiOutlineGateway } from "react-icons/ai";
 import "../../component/Boxset/box.css";
 import "../../views/welcomepage/welcomepage.css";
 import Button from "react-bootstrap/Button";
+import { useState } from "react";
 
 const CardsComponent = (props) => {
   const { data, text, smalltext } = props;
-  //   console.warn("-------->propsdata",props.data);
+  console.warn("-------->propsdata", props);
+
   return (
     // <Card className='bg-info'>
     //     <Card.Body>
@@ -25,7 +27,9 @@ const CardsComponent = (props) => {
 
     <Card className="cardscolor">
       <Card.Body>
-        <p className="cardslogoset ">{props.data}</p>
+        <div className="py-3">
+          <img src={props.data} alt="no pic" />
+        </div>
         <Card.Title>{props.text}</Card.Title>
         <Card.Text>
           <p>{props.smalltext}</p>
@@ -36,18 +40,81 @@ const CardsComponent = (props) => {
 };
 export default CardsComponent;
 
+
+
+
+
+
+
+
+
+
+
+
 export const AppcardsGroup = (propsvalue) => {
-  // console.warn("========>props icon", propsvalue.text);
+  const [state, setState] = useState({
+    onHover: false,
+  });
+  const { onHover } = state;
+  const handlehover = () => {
+    setState({ ...state, onHover: true });
+  };
+  const handlehoverOut = () => {
+    setState({ ...state, onHover: false });
+  };
+  console.warn("========>props icon", propsvalue);
   return (
     <>
-      <Card className="text-center justify-content-between m-3 rounded py-3 border border-2 iconshadow">
+        <Card
+          className={` rounded py-3 border border-2 ${
+            onHover ? "cardtextchange" : ""
+          } `}
+          onMouseOut={handlehoverOut}
+          onMouseOver={handlehover}
+        >
+          <Card.Body className="text-center ">
+            <div className=" imageheight">
+              <img
+                src={propsvalue.icon}
+                alt=""
+                className="blockimage mx-auto"
+              />
+            </div>
+            <Card.Title className="icontitletext pt-4">
+              {propsvalue.text}
+            </Card.Title>
+            <Card.Text className="blocktext">{propsvalue.smalltext}</Card.Text>
+            <Card.Text>{propsvalue.link}</Card.Text>
+          </Card.Body>
+        </Card>
+    </>
+  );
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+export const AppcardsGroup1 = (propsvalue) => {
+  return (
+    <>
+      <Card className="">
         <Card.Body className="">
-          <p className="iconsize">{propsvalue.icon}</p>
-          <Card.Title className="icontitletext fs-5 ">
-            {propsvalue.text}
-          </Card.Title>
-          <Card.Text>{propsvalue.smalltext}</Card.Text>
-          <Card.Text>{propsvalue.link}</Card.Text>
+          <p className="">{propsvalue.icon}</p>
+          <Card.Title className="">{propsvalue.text}</Card.Title>
+          <Card.Text className="">{propsvalue.smalltext}</Card.Text>
         </Card.Body>
       </Card>
     </>
@@ -59,7 +126,10 @@ export const NumberSpeak = (props) => {
   return (
     <Card>
       <Card.Body className="numberbody py-4 rounded">
-        <Card.Title className="numbertitle"> <h2>{props.bluetext}</h2> </Card.Title>
+        <Card.Title className="numbertitle">
+          {" "}
+          <h2>{props.bluetext}</h2>{" "}
+        </Card.Title>
         <Card.Text>{props.text}</Card.Text>
       </Card.Body>
     </Card>

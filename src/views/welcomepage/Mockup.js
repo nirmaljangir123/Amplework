@@ -25,6 +25,7 @@ import {
 } from "react-icons/fc";
 import { FiTarget } from "react-icons/fi";
 import { Fa500Px, FaBuffer } from "react-icons/fa";
+import { IconName } from "react-icons/rx";
 // FaLayerGroup,GrOptimize,MdGroups,BsStopwatch,Fa500Px
 // png image
 import Applock from "../../assets/pnglogoimage/Applock.png";
@@ -43,57 +44,80 @@ import Foldmobile from "../../assets/pnglogoimage/Foldable-Smart-Phone-Mobile-Ap
 import pksir from "../../assets/Developerphotos/pksir.png";
 import sksir from "../../assets/Developerphotos/sksir.png";
 import supermaam from "../../assets/Developerphotos/novamaam.png";
+import blacktarget from "../../assets/opicityimage/blacktarget.png";
+import whitetarget from "../../assets/opicityimage/lighttarget.png";
+import target from "../../assets/opicityimage/Target.png";
+//png image
+import cheak from "../../assets/opicityimage/cheak.png";
+import anti from "../../assets/opicityimage/anti.png";
+import good from "../../assets/opicityimage/good.png";
+import layer from "../../assets/opicityimage/layer.png";
+import remote from "../../assets/opicityimage/remotecontrol.png";
+import support from "../../assets/opicityimage/support.png";
+import version from "../../assets/opicityimage/version.png";
+
+// imges
+import groupsetting from "../../assets/imges/groupsetting.png";
+import grouppc from "../../assets/imges/grouppc.png";
+import groupanti from "../../assets/imges/groupanti.png";
+import grouptop from "../../assets/imges/grouptop.png";
+import groupsqure from "../../assets/imges/groupsqure.png";
+import groupphone from "../../assets/imges/groupphone.png";
+import groupchip from "../../assets/imges/groupchip.png";
+import groupgames from "../../assets/imges/groupgames.png";
+
 export const Active = [
   {
-    logo: BsBug(),
+    logo: cheak,
     bgcolor: "rgb(240, 100, 102)",
     backbgcolor: "8px -8px rgb(255, 225, 225)",
     text: "Bug Busting & Debugging",
   },
   {
-    logo: GrSettingsOption(),
+    logo: anti,
     bgcolor: "rgb(244, 131 ,98)",
     backbgcolor: "8px -8px rgb( 255, 231, 225)",
     text: "Quality Checks",
   },
   {
-    logo: BsBug(),
-    bgcolor: "rgb(238, 208, 248)",
+    logo: good,
+    bgcolor: "rgb(158, 108, 175)",
     backbgcolor: "8px -8px rgb(238 ,208, 248)",
     text: "Remote Product Maintenance",
   },
   {
-    logo: MdOutlineSettingsRemote(),
+    logo: good,
     bgcolor: "rgb(78, 189 ,142)",
     backbgcolor: "8px -8px rgb( 210 ,246, 231)",
     text: "Version Enhancements",
   },
   {
-    logo: GrDocumentTest(),
+    logo: cheak,
     bgcolor: "rgb(247, 164, 87)",
     backbgcolor: "8px -8px rgb(255, 229, 204)",
     text: "Tech Troubleshooting",
   },
   {
-    logo: GrTechnology(),
+    logo: cheak,
     bgcolor: "rgb( 89, 148, 245)",
     backbgcolor: "8px -8px rgb(180 ,208, 255)",
     text: "Load Testing",
   },
   {
-    logo: GrDocumentPerformance(),
+    logo: version,
     bgcolor: "rgb( 55,189, 234)",
     backbgcolor: "8px -8px rgb( 201, 242 ,255)",
     text: "Performance Oversight",
   },
   {
-    logo: BiSupport(),
+    logo: version,
     bgcolor: "rgb(85 ,119, 204)",
     backbgcolor: "8px -8px rgb(152 ,178, 245)",
     text: "User-Focused Support",
   },
 ];
 
+// Fascinating Benefits of Application Maintenance and Support Services
 export const Fascinate = [
   {
     text: "Longer Life span",
@@ -133,26 +157,98 @@ export const Fascinate = [
   },
 ];
 
-export const Cardsdata = [
+// Types of Apps We Maintain At Amplework Software
+export const Maintain = [
   {
-    icon: FiTarget(),
+    id: 0,
+    icon: groupsetting,
+    text: "Web Apps",
+    smalltext:
+      "We conduct maintenance of applications that run within a web browser and can be accessed through the internet.",
+  },
+  {
+    id: 1,
+    icon: grouppc,
+    text: "Cloud Apps & SaaS",
+    smalltext:
+      "We conduct maintenance of applications that run within a web browser and can be accessed through the internet.",
+  },
+  {
+    id: 2,
+    icon: groupanti,
+    text: "Enterprise Apps",
+    smalltext:
+      "We conduct maintenance of applications that run within a web browser and can be accessed through the internet.",
+  },
+  {
+    id: 3,
+    icon: grouptop,
+    text: "AR/VR Apps",
+    smalltext:
+      "We conduct maintenance of applications that run within a web browser and can be accessed through the internet.",
+  },
+  {
+    id: 4,
+    icon: groupsqure,
+    text: "Database Apps",
+    smalltext:
+      "We conduct maintenance of applications that run within a web browser and can be accessed through the internet.",
+  },
+  {
+    id: 5,
+    icon: groupphone,
+    text: "AI/ML Apps",
+    smalltext:
+      "We conduct maintenance of applications that run within a web browser and can be accessed through the internet.",
+  },
+  {
+    id: 6,
+    icon: groupchip,
+    text: "Gaming Apps",
+    smalltext:
+      "We conduct maintenance of applications that run within a web browser and can be accessed through the internet.",
+  },
+  {
+    id: 7,
+    icon: groupgames,
+    text: "Hybrid Apps",
+    smalltext:
+      "We conduct maintenance of applications that run within a web browser and can be accessed through the internet.",
+  },
+];
+
+export const CardsdataArrow = [
+  {
+    black: blacktarget,
+    white: whitetarget,
+    target: target,
     text: "Fixed",
     smalltext:
       "Slow and glitch software updates with no-real benefits for users?.",
     link: "Amplework,s Solution",
+    largetext:
+      "Our in-house support matrix and best-in-industry prices will resultant in cost reduction by 30% to 40%.",
   },
   {
-    icon: FiTarget(),
+    black: blacktarget,
+    white: whitetarget,
+    target: target,
     text: "issue",
     smalltext:
       "Slow and glitch software updates with no-real benefits for users?",
     link: "Amplework,s Solution",
+    largetext:
+      "Our in-house support matrix and best-in-industry prices will resultant in cost reduction by 30% to 40%.",
   },
   {
-    icon: FiTarget(),
+    black: blacktarget,
+    white: whitetarget,
+    target: target,
     text: "issue",
     smalltext: "Need profound resources for program visibility?",
     link: "Amplework,s Solution",
+    largetext:
+      "Our in-house support matrix and best-in-industry prices will resultant in cost reduction by 30% to 40%.",
   },
 ];
 
@@ -254,4 +350,80 @@ export const overflowimage = [
   { pk: pksir, text: "Santosh Singh CEO" },
   { pk: sksir, text: "Prakash Saini CTO" },
   { pk: supermaam, text: "Supernova CXO" },
+];
+
+export const FooterBlockMockup = [
+  {
+    part: GrSystem(),
+    full: GrOptimize(),
+    hour: GrVirtualMachine(),
+    parttext: "Part Time",
+    fulltext: "Full-time",
+    hourtext: "Hourly",
+    buttondata: "Explore more",
+    toptext: " Do you want to hire resources for your project?",
+    smalltext:
+      "We have web and app development teams to serve modern tech-savy client by bidding on the challenges on their bespoken requirement.",
+    part1: GrSystem(),
+    full1: GrCloudSoftware(),
+    hour1: GrVirtualMachine(),
+    parttext1: "Accessibility",
+    fulltext1: "Adaptability",
+    hourtext1: "Scalability",
+    buttondata1: "Explore more",
+    toptext1: " Are you a startup and want to go live asap?",
+    smalltext1:
+      "We have been working with stand help t grow.Our experience can help you refine your business ideas and get into the market asap.",
+  },
+];
+
+export const Topmove = [
+  {
+    icon: GrSystem(),
+    text: "Proactive Monitoring & Maintenance",
+    smalltext:
+      "We use advanced monitoring tools and technologies to proactively identify potential issues before they become critical. This ensures the smooth functioning of your applications, reducing downtime and improving user experience.",
+  },
+  {
+    icon: GrCloudSoftware(),
+    text: "Web App",
+    smalltext:
+      "We use advanced monitoring tools and technologies to proactively identify potential issues before they become critical. This ensures the smooth functioning of your applications, reducing downtime and improving user experience.",
+  },
+  {
+    icon: GrSystem(),
+    text: "Proactive Monitoring & Maintenance",
+    smalltext:
+      "We use advanced monitoring tools and technologies to proactively identify potential issues before they become critical. This ensures the smooth functioning of your applications, reducing downtime and improving user experience.",
+  },
+  {
+    icon: GrSystem(),
+    text: "Proactive Monitoring & Maintenance",
+    smalltext:
+      "We use advanced monitoring tools and technologies to proactively identify potential issues before they become critical. This ensures the smooth functioning of your applications, reducing downtime and improving user experience.",
+  },
+  {
+    icon: GrSystem(),
+    text: "Proactive Monitoring & Maintenance",
+    smalltext:
+      "We use advanced monitoring tools and technologies to proactively identify potential issues before they become critical. This ensures the smooth functioning of your applications, reducing downtime and improving user experience.",
+  },
+  {
+    icon: GrSystem(),
+    text: "Proactive Monitoring & Maintenance",
+    smalltext:
+      "We use advanced monitoring tools and technologies to proactively identify potential issues before they become critical. This ensures the smooth functioning of your applications, reducing downtime and improving user experience.",
+  },
+  {
+    icon: GrSystem(),
+    text: "Proactive Monitoring & Maintenance",
+    smalltext:
+      "We use advanced monitoring tools and technologies to proactively identify potential issues before they become critical. This ensures the smooth functioning of your applications, reducing downtime and improving user experience.",
+  },
+  {
+    icon: GrSystem(),
+    text: "Proactive Monitoring & Maintenance",
+    smalltext:
+      "We use advanced monitoring tools and technologies to proactively identify potential issues before they become critical. This ensures the smooth functioning of your applications, reducing downtime and improving user experience.",
+  },
 ];

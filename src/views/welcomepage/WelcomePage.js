@@ -2,7 +2,7 @@ import React from "react";
 import { Button, Card, FormGroup } from "react-bootstrap";
 import "../welcomepage/welcomepage.css";
 import { TopNavbar, Welcome } from "../../component";
-import Ploygan from "../../component/polygan/Ploygan";
+// import Ploygan from "../../component/polygan/Ploygan";
 import Footer from "../footer/Footer";
 // png bg image
 import home from "../../assets/pnglogoimage/homebgimage.jpg";
@@ -15,6 +15,29 @@ import ken from "../../assets/Developerphotos/ken_murai.png";
 import imo from "../../assets/Developerphotos/imo_etuk.png";
 import shokesbgimage from "../../assets/pnglogoimage/shokesbgimage.png";
 import shokesimage from "../../assets/pnglogoimage/shokesimage.png";
+import overview from "../../assets/pnglogoimage/overview.svg";
+import softwareapplicaton11 from "../../assets/pnglogoimage/software-application11.png";
+import outline11 from "../../assets/pnglogoimage/OUTLINE11.png";
+import datatranfer11 from "../../assets/pnglogoimage/data-transfer11.png";
+
+// opicity image
+import cheak from "../../assets/opicityimage/cheak.png";
+import anti from "../../assets/opicityimage/anti.png";
+import good from "../../assets/opicityimage/good.png";
+import layer from "../../assets/opicityimage/layer.png";
+import remote from "../../assets/opicityimage/remotecontrol.png";
+import support from "../../assets/opicityimage/support.png";
+import version from "../../assets/opicityimage/version.png";
+
+// images
+import groupsetting from "../../assets/imges/groupsetting.png";
+import grouppc from "../../assets/imges/grouppc.png";
+import groupanti from "../../assets/imges/groupanti.png";
+import grouptop from "../../assets/imges/grouptop.png";
+import groupsqure from "../../assets/imges/groupsqure.png";
+import groupphone from "../../assets/imges/groupphone.png";
+import groupchip from "../../assets/imges/groupchip.png";
+import groupgames from "../../assets/imges/groupgames.png";
 // cards component import
 import Cards from "../";
 import CardGroup from "react-bootstrap/CardGroup";
@@ -45,7 +68,10 @@ import {
   GrApple,
   GrOptimize,
 } from "react-icons/gr";
-import CardsComponent, { NumberSpeak } from "../../component/Boxset/Card";
+import CardsComponent, {
+  AppcardsGroup1,
+  NumberSpeak,
+} from "../../component/Boxset/Card";
 import Apparrow from "../../assets/pnglogoimage/Apparrow.png";
 import { IoLogoAppleAppstore, IoIosPlayCircle } from "react-icons/io";
 import { AiOutlineUser } from "react-icons/ai";
@@ -57,11 +83,7 @@ import {
   BsArrowUpRight,
   BsStopwatch,
 } from "react-icons/bs";
-import {
-  BiSupport,
-  BiMessageDetail,
-  BiMessageAltDots,
-} from "react-icons/bi";
+import { BiSupport, BiMessageDetail, BiMessageAltDots } from "react-icons/bi";
 import { MdOutlineSettingsRemote, MdGroups } from "react-icons/md";
 import { GiCoolSpices, GiCheckMark } from "react-icons/gi";
 import { MdOutlineAppShortcut, MdWifiCalling1 } from "react-icons/md";
@@ -70,8 +92,13 @@ import { RiApps2Fill } from "react-icons/ri";
 import { SlGameController } from "react-icons/sl";
 import { ImCompass } from "react-icons/im";
 import { FcOk } from "react-icons/fc";
-import { AiFillLinkedin } from "react-icons/ai";
-import { BsGooglePlay, BsCurrencyDollar } from "react-icons/bs";
+import { AiFillLinkedin, AiOutlineAppstoreAdd } from "react-icons/ai";
+import {
+  BsGooglePlay,
+  BsCurrencyDollar,
+  BsShop,
+  BsShieldMinus,
+} from "react-icons/bs";
 import { FcManager } from "react-icons/fc";
 import { TiPointOfInterestOutline } from "react-icons/ti";
 import { HiOutlineMailOpen } from "react-icons/hi";
@@ -102,17 +129,20 @@ import Accordion from "react-bootstrap/Accordion";
 import {
   Active,
   Cardsdata,
+  CardsdataArrow,
   Digitalize,
   Fascinate,
   FrequentlyAsked,
+  Maintain,
+  Topmove,
   TrustedDeveloper,
 } from "./Mockup";
 import FormvaidationSlide from "../../component/formvalidation/FormvaidationSlide";
 
+// import css
 const WelcomePage = () => {
   return (
     <>
-      {/* <TopNavbar /> */}
       <div className="page-containe">
         <section
           className="classmantaience"
@@ -121,11 +151,17 @@ const WelcomePage = () => {
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
             backgroundSize: "cover",
+            paddingTop: "0px",
           }}
         >
-          <div className="container">
+          <TopNavbar />
+
+          <div className="container pt-5">
             <div className=" row text-center">
-              <p className="text-uppercase text-warning text-center fw-semibold">
+              <p
+                className="text-uppercase text-warning text-center fw-semibold"
+                style={{ letterSpacing: "3px" }}
+              >
                 {" "}
                 Application mantainance and support
               </p>
@@ -141,13 +177,14 @@ const WelcomePage = () => {
             </div>
           </div>
         </section>
+
         {/* section 222222222222 */}
         <section>
           <div className="container">
             <div className="row d-lg-flex ">
               <div className="col-sm-12 col-lg-6 text-center">
                 <img
-                  src="https://www.amplework.com/wp-content/themes/amplework/assets/img/graphics/cloudSolution/overview.png"
+                  src={overview}
                   alt="no pic"
                   width={400}
                   className="img-fluid"
@@ -155,17 +192,26 @@ const WelcomePage = () => {
               </div>
 
               <div className="col-sm-12 col-lg-6 pt-4">
-                <h6 className="text-primary">AMPLEWORK SOFTWARE</h6>
-                <h5 className="w-75">
+                <h5
+                  className="text-primary fw-bold"
+                  style={{ letterSpacing: "4px" }}
+                >
+                  AMPLEWORK SOFTWARE
+                </h5>
+                <h4 className="py-2">
                   {" "}
                   Your Dedicated Supporter for All Maintenance Services
-                </h5>
+                </h4>
 
-                <p className="w-75">
+                <p className="">
                   We are a leading tech company in offering digital solutions to
                   hundreds of clients across the globe. Our team of developers
                   exhibits a wide range skills and expertise that help in
                   delivering high quality digital solutions to meet your
+                  <br />
+                  business requirements. Our approach and software development
+                  strategies are well tested and suitable in ensuring that your
+                  idea is turned into a working solution in a timely manner.
                   <br />
                   business requirements. Our approach and software development
                   strategies are well tested and suitable in ensuring that your
@@ -176,6 +222,7 @@ const WelcomePage = () => {
           </div>
         </section>
         {/* section 33333333333333 */}
+
         <section className="experiencebgcolor">
           <div className="container">
             <div className="text-center">
@@ -184,7 +231,7 @@ const WelcomePage = () => {
                 Application Support and Maintenance.
               </h2>
 
-              <p className="paddingbottom pt-4 px-5">
+              <p className="paddingbottom pt-4">
                 our advanced mobile application maintenance and Support provide
                 a Comprehensive approach to managing and maintaining your
                 application.
@@ -192,14 +239,35 @@ const WelcomePage = () => {
             </div>
           </div>
         </section>
-        {/* section 44444444 */}
+
+        {/* setion 33333333444444444 */}
+
+        {/* <section className="pt-0">
+          <div className="container">
+            <div className="row ">
+              {Topmove.map((varient, key) => (
+                <div className="col-sm-12 col-md-6 col-lg-3">
+                  <div key={varient} className="text-center m-1 border">
+                    <h1>{varient.icon}</h1>
+                    <div>
+                      <h4>{varient.text}</h4>
+                      <p>{varient.smalltext}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section> */}
+
+        {/* section 44444444    Advanced Application Support  */}
         <section>
           <div className="container text-center">
             <h2 className=" px-2">
               Our Advanced Application Support Service - Elevate Your
               Application's Performance
             </h2>
-            <p className=" px-5 ">
+            <p className=" px-5 py-4">
               Complex applications which are configured with the latest APIs
               require the advanced solutions to keep the working mechanism of
               the applications in a perfect shape. At Amplework,
@@ -207,17 +275,17 @@ const WelcomePage = () => {
             <div>
               <CardGroup>
                 <CardsComponent
-                  data={GrIteration()}
+                  data={softwareapplicaton11}
                   text="Application Re-engineering"
                   smalltext="Our developers evaluate existing applications through a series ofin-house testing processes in order to evaluate the functionalities ofthe applications that need to be re-engineered"
                 />
                 <CardsComponent
-                  data={GrStorage()}
+                  data={outline11}
                   text="Application Migration & Integration"
                   smalltext="Our engineers are profound in supporting you for moving applications from physical or local settings to remote based servers. We also provide application migration as well as integration services."
                 />
                 <CardsComponent
-                  data={GrTestDesktop()}
+                  data={datatranfer11}
                   text="Application Support"
                   smalltext="It includes a range of activities for ensuring proper functioning and optimization of a web or mobile application. We focus towards continuous monitoring and continuous improvement of functions."
                 />
@@ -229,7 +297,7 @@ const WelcomePage = () => {
           </div>
         </section>
 
-        {/* section 5555555555 */}
+        {/* section 5555555555   Targeted Activities   */}
         <section className="activtiesbgcolor">
           <div className="container">
             <div className="row">
@@ -243,7 +311,7 @@ const WelcomePage = () => {
                   typesetting industry. Lorem Ipsum has been the industry's
                   standard dummy text ever since the 1500s,
                 </p>
-                <ul>
+                <ul className="px-3 ulcolorchange">
                   <li>Amplework offers hire.</li>
                   <li>dedicated Full Stack.</li>
                   <li>developers who possess.</li>
@@ -255,13 +323,17 @@ const WelcomePage = () => {
                     <div className="col-sm-12 col-md-6">
                       <div className="d-flex my-3 ">
                         <div
-                          className="iconshadow p-2 rounded border border-1"
+                          className="iconshadow p-3 rounded border border-1"
                           style={{
                             backgroundColor: varient.bgcolor,
                             boxShadow: varient.backbgcolor,
                           }}
                         >
-                          <h1 className="">{varient.logo}</h1>
+                          <img
+                            src={varient.logo}
+                            alt="no pic "
+                            className="img-fluid"
+                          />
                         </div>
                         <div className="align-text-center">
                           <p className="px-5">{varient.text}</p>
@@ -274,11 +346,15 @@ const WelcomePage = () => {
             </div>
           </div>
         </section>
+
         {/* section 6666666666666666666 */}
         <section>
           <div className="container">
             <div className="text-center">
-              <p className="text-uppercase text-warning text-center fw-semibold">
+              <p
+                className="text-uppercase text-warning text-center fw-semibold"
+                style={{ letterSpacing: "3px" }}
+              >
                 Keep Your Applications Always Shine
               </p>
               <h2>Types of Apps We Maintain At Amplework Software</h2>
@@ -288,28 +364,36 @@ const WelcomePage = () => {
                 text ever since the 1500s,
               </p>
             </div>
+            <div className="d-flex flex-wrap justify-content-center ">
+              {Maintain.map((varient, key) => (
+                <Card
+                  style={{ width: "18rem" }}
+                  className="mx-2 my-3 cardshover"
+                >
+                  <Card.Body className="text-center ">
+                    <div className="defaultshowdata ">
+                      <div className="imagedivheight">
+                        <img
+                          src={varient.icon}
+                          alt=""
+                          className=" mx-auto img-fluid"
+                        />
+                      </div>
+                      <Card.Title className=" pt-2">{varient.text}</Card.Title>
+                    </div>
 
-            <CardGroup className="">
-              <AppcardsGroup icon={GrSystem()} text="Web Apps" />
-              <AppcardsGroup
-                icon={GrCloudSoftware()}
-                text="Cloud Apps & SaaS"
-              />
-              <AppcardsGroup icon={GiCoolSpices()} text="Enterprise Apps" />
-              <AppcardsGroup icon={MdOutlineAppShortcut()} text="AR/VR Apps" />
-            </CardGroup>
-            <CardGroup>
-              <AppcardsGroup
-                icon={SiAzuredataexplorer()}
-                text="Database Apps"
-              />
-              <AppcardsGroup icon={RiApps2Fill()} text="AI/ML Apps" />
-              <AppcardsGroup icon={SlGameController()} text="Gaming Apps" />
-              <AppcardsGroup icon={GrVirtualMachine()} text="Hybrid Apps" />
-            </CardGroup>
+                    <div className="hovershowdata text-light">
+                      <p className=" fs-5">{varient.text}</p>
+                      <p className="">{varient.smalltext}</p>
+                    </div>
+                  </Card.Body>
+                </Card>
+              ))}
+            </div>
           </div>
         </section>
-        {/* section 777777777777 */}
+
+        {/* section 777777777777  Let's get your app in shape - contact us now and let the maintenance magic begin */}
         <section className="appshapebgcolor">
           <div className="container text-center">
             <h2 className="px-3">
@@ -323,22 +407,51 @@ const WelcomePage = () => {
               ever since the 1500s,
             </p>
             <div className="row justify-content-center pt-4">
-              {Cardsdata.map((variant) => (
+              {CardsdataArrow.map((variant, key) => (
                 <Card
                   key={variant}
-                  style={{ width: "20rem" }}
+                  style={{ width: "19rem" }}
                   className="cardsborder1 text-center m-4 p-4"
                 >
                   <Card.Body className="cardbodyborder1">
-                    <h1>{variant.icon}</h1>
-                    <Card.Title className="icontitletext11">
-                      {" "}
-                      {variant.text}{" "}
-                    </Card.Title>
-                    <Card.Text className="smalltext1">
-                      {variant.smalltext}
-                    </Card.Text>
-                    <Card.Text className="linktext1">{variant.link}</Card.Text>
+                    <div className="defaultshowdata11">
+                      <div>
+                        <img src={variant.black} alt="no pic" />
+                      </div>
+                      <Card.Title className="text-danger py-3">
+                        {" "}
+                        {variant.text}{" "}
+                      </Card.Title>
+                      <p className="">{variant.smalltext}</p>
+                      <Card.Text className="text-primary">
+                        {variant.link}
+                      </Card.Text>
+                    </div>
+                    <div className="hoveronmouse">
+                      <div>
+                        <div>
+                          <img
+                            src={variant.target}
+                            alt="no pic"
+                            className="targethover"
+                          />
+                        </div>
+                        <div>
+                          <img
+                            src={variant.white}
+                            alt="no pic"
+                            className="arrowhover"
+                          />
+                        </div>
+                      </div>
+                      <Card.Title className="text-warning py-3">
+                        {" "}
+                        {variant.text}{" "}
+                      </Card.Title>
+                      <Card.Text className="text-light">
+                        {variant.smalltext}
+                      </Card.Text>
+                    </div>
                   </Card.Body>
                 </Card>
               ))}
@@ -346,7 +459,7 @@ const WelcomePage = () => {
           </div>
         </section>
 
-        {/* section 888888888888 */}
+        {/* section 888888888888   Fascinating Benefits of Application Maintenance and Support Services*/}
         <section className="fasinatebgcolor">
           <div className="container">
             <div className="text-center">
@@ -578,7 +691,7 @@ const WelcomePage = () => {
                         className=" text-dark fw-bold position-sticky"
                         style={{
                           marginTop: "-25px",
-                          backgroundColor: "#fff",
+                          backgroundColor: "rgb(205,206,15)",
                           width: "75%",
                           borderRadius: "10px",
                         }}
@@ -842,9 +955,12 @@ const WelcomePage = () => {
         <section className="formvalidation p-0">
           <FormvaidationSlide />
         </section>
-        <section></section>
+
+        {/* footer  */}
+        <section className="formvalidation p-0">
+          <Footer />
+        </section>
       </div>
-      {/* <Footer /> */}
     </>
   );
 };

@@ -16,53 +16,15 @@ import enterpriseBg from "../../assets/opicityimage/enterpriseBg.png";
 import { Welcome } from "../../component";
 
 import "../../component/footer/footer.css";
+import { FooterBlockMockup } from "../welcomepage/Mockup";
 const Footer = () => {
   return (
     <>
-      <div className="container-fluid footerbgcolor py-5">
-        <div className="container">
-          <CardGroup>
-            <FooterBlock
-              image={{
-                part: partTime,
-                full: calendar,
-                hour: hourglass,
-              }}
-              text={{
-                part: "Part Time",
-                full: "Full-time",
-                hour: "Hourly",
-              }}
-              buttondata={{
-                data: "Explore more",
-                varient: "outline-warning",
-                round: "rounded-pill",
-                fw: "semibold",
-              }}
-              bgimage={{}}
-            />
-            <FooterBlock
-              image={{
-                part: Adaptability,
-                full: Scalability,
-                hour: Accessibility,
-              }}
-              text={{
-                part: "Accessibility",
-                full: "Adaptability",
-                hour: "Scalability",
-              }}
-              buttondata={{
-                data: "Explore more",
-                varient: "outline-warning",
-                round: "rounded-pill",
-                fw: "semibold",
-              }}
-            />
-          </CardGroup>
-          <div className="py-5">
-            <FooterIso />
-          </div>
+      <div className="container footerbgcolor py-5">
+        <FooterBlock varient={FooterBlockMockup} />
+        {console.log("cheak data",)}
+        <div className="py-5">
+          <FooterIso />
         </div>
       </div>
       <div className="container-fluid bg-dark text-light">
@@ -75,7 +37,6 @@ const Footer = () => {
           <Footertwatter />
         </div>
       </div>
-      
     </>
   );
 };

@@ -29,57 +29,85 @@
 
 }
 
+/* Types of Apps We Maintain At Amplework Software */
+.defaultshowdata {
+    display: block;
+}
+
+.hovershowdata {
+    display: none;
+}
+
+.cardscardshover {
+    box-shadow: -15px -15px 20px rgb(237, 221, 221);
+    border-radius: 15px;
+    font-size: 12px;
+}
+
+.cardshover:hover {
+    background-color: rgb(3, 45, 226);
+    translate: -50px -30px -10px;
+    transform: scale(1.1);
+    transition-duration: 1s;
+    /* padding: 0px 1px; */
+}
+
+.cardshover:hover .defaultshowdata {
+    display: none;
+}
+
+.cardshover:hover .hovershowdata {
+    display: block;
+}
+
+.imagedivheight {
+    height: 120px;
+
+}
+
+
+
+
 /* app shape */
 .appshapebgcolor {
     background-color: rgb(250, 250, 250);
 }
 
+.defaultshowdata11 
+{
+    display: block;
+}
+.hoveronmouse
+{
+    display:none;
+}
+
 .cardsborder1 {
-    border: 4px dashed rgb(140, 133, 133);
+    border: 5px dashed rgb(140, 133, 133);
     border-radius: 10px;
 }
 
 .cardbodyborder1 {
     border: 2px solid rgb(226, 216, 216);
     border-radius: 10px;
-
 }
 
-.icontitletext11 {
-    font-size: 20px;
-    color: rgb(255, 3, 3);
+.cardsborder1:hover .defaultshowdata11 
+{
+    display: none;
 }
 
-
-.linktext1 {
-    color: rgb(3, 45, 226);
+.cardsborder1:hover .hoveronmouse 
+{
+    display: block;
 }
-
-.smalltext1 {
-    height: 90px;
-    /* background-color: crimson; */
-}
-
-
-.cardsborder1:hover .smalltext1 {
-    color: #fff;
-}
-
-.cardsborder1:hover h1 {
-    color: #fff;
-}
-
-.cardsborder1:hover .icontitletext11 {
-    color: rgb(245, 164, 3);
-}
-
-.cardsborder1:hover .cardbodyborder1 {
+.cardsborder1 :hover
+{
     background-color: rgb(6, 21, 114);
-    border: 4px solid rgb(6, 21, 114);
 }
-
-.cardsborder1:hover {
-    border: 4px dashed rgb(6, 21, 114);
+.cardsborder1:hover
+{
+border: 5px dashed rgb(6, 21, 114);
 }
 
 /* fasinating */
@@ -98,7 +126,21 @@
 .cardhovers1 {
     box-shadow: 10px -5px 15px rgb(86, 86, 89);
 }
-
+.targethover
+{
+    margin-top: -100px ; 
+    margin-right: -50px;
+}
+.cardhovers1 :hover .targethover
+{
+    translate: 0px 0px 0px;
+    transform: scale(1.1);
+    transition-duration: 1s;
+}
+.arrowhover
+{
+   
+}
 .cardhovers1:hover {
     background-color: rgb(3, 45, 226);
     transition-duration: 2s, 1s;
@@ -106,10 +148,17 @@
     color: #fff;
 }
 
+
+
+
 /* number speak csss */
 .numberbgcolor {
     background-color: rgb(245, 247, 251);
 }
+
+
+
+
 
 /* searching */
 
@@ -178,4 +227,20 @@ input {
 input:focus {
     border-color: green;
 
+}
+
+/* section 333334444444 */
+.topmove {
+    background-color: blueviolet;
+    margin-top: -100px;
+    position: relative;
+
+}
+
+
+.ulcolorchange {
+    /* font-size: 200%; */
+
+    list-style-image: linear-gradient(rgb(65, 5, 244), blue);
+    list-style-type: circle;
 }
