@@ -8,3 +8,8 @@
     background-color:rgb(227, 19, 189);
 
 }
+/* navbar  */
+.navbarhover:hover 
+{
+    color: brown;
+}

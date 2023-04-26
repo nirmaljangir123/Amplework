@@ -3,8 +3,6 @@ import CardGroup from "react-bootstrap/CardGroup";
 import { AiOutlineGateway } from "react-icons/ai";
 // import { GrIteration, GrStorage, GrTestDesktop } from "react-icons/gr";
 import "../../component/Boxset/box.css";
-import "../../views/welcomepage/welcomepage.css";
-import Button from "react-bootstrap/Button";
 import { useState } from "react";
 
 const CardsComponent = (props) => {

@@ -1,55 +1,28 @@
 import React from "react";
 
 // images
-import ken from "../../assets/Developerphotos/ken_murai.png";
-import pngwing from "../../assets/pnglogoimage/pngwing.png";
-import pksir from "../../assets/Developerphotos/pksir.png";
-import sksir from "../../assets/Developerphotos/sksir.png";
-import supermaam from "../../assets/Developerphotos/novamaam.png";
+import ken from "../../../assets/Developerphotos/ken_murai.png";
+import pngwing from "../../../assets/pnglogoimage/pngwing.png";
+import pksir from "../../../assets/Developerphotos/pksir.png";
+import sksir from "../../../assets/Developerphotos/sksir.png";
+import supermaam from "../../../assets/Developerphotos/novamaam.png";
 
 // validation
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
 import Row from "react-bootstrap/Row";
-import Dropdown from "react-bootstrap/Dropdown";
-import DropdownButton from "react-bootstrap/DropdownButton";
-import "../../component/formvalidation/Formvalid.css";
-
-import Carousel from "react-bootstrap/Carousel";
 
 // icons
-import { BiGame, BiMessageAltDots, BiSupport } from "react-icons/bi";
+import { BiMessageAltDots } from "react-icons/bi";
 import { MdWifiCalling1, MdGroups } from "react-icons/md";
-import { BsCurrencyDollar, BsPlusCircle, BsStopwatch } from "react-icons/bs";
+import { BsPlusCircle, BsStopwatch } from "react-icons/bs";
 import { FcManager } from "react-icons/fc";
 import { TiPointOfInterestOutline } from "react-icons/ti";
 import { Button, Card } from "react-bootstrap";
-import { QuickStart, overflowimage } from "../../views/welcomepage/Mockup";
 import { RiBarChartGroupedLine, RiStarHalfLine } from "react-icons/ri";
-import {
-  IoLogoAppleAppstore,
-  IoIosPlayCircle,
-  IoBugOutline,
-} from "react-icons/io";
-import {
-  GrIteration,
-  GrStorage,
-  GrTestDesktop,
-  GrSettingsOption,
-  GrDocumentPerformance,
-  GrTechnology,
-  GrDocumentTest,
-  GrSystem,
-  GrCloudSoftware,
-  GrVirtualMachine,
-  GrGooglePlay,
-  GrAppleAppStore,
-  GrApple,
-  GrOptimize,
-} from "react-icons/gr";
 
-const FormvaidationSlide = () => {
+const AmpleValidation = () => {
   return (
     <div className="container">
       <div className="row">
@@ -236,7 +209,6 @@ const FormvaidationSlide = () => {
             </Row>
           </Form>
         </div>
-        {/* MdWifiCalling1,BsCurrencyDollar,FcManager,TiPointOfInterestOutline,GiCheckMark, BiMessageDetail, BiMessageAltDots */}
 
         <div
           className="col-sm-12 col-lg-6 text-light p-5"
@@ -254,7 +226,6 @@ const FormvaidationSlide = () => {
               <div>
                 <p className="fw-semibold">Successful projects</p>
               </div>
-              {/* GrOptimize, IoBugOutline, BsStopwatch, BiSupport, MdGroups; */}
             </div>
             <div className="col-sm-12 col-md-5">
               <div className="">
@@ -265,7 +236,6 @@ const FormvaidationSlide = () => {
               <div>
                 <p className="fw-semibold">Client retention</p>
               </div>
-              {/* GrOptimize, IoBugOutline, BsStopwatch, BiSupport, MdGroups; */}
             </div>
             <div className="col-sm-12 col-md-5 pb-3">
               <div className="d-flex">
@@ -276,7 +246,6 @@ const FormvaidationSlide = () => {
               <div>
                 <p className="fw-semibold">Client retention</p>
               </div>
-              {/* GrOptimize, IoBugOutline, BsStopwatch, BiSupport, MdGroups; */}
             </div>
             <div className="col-sm-12 col-md-5 pb-3">
               <div className="d-flex">
@@ -287,7 +256,6 @@ const FormvaidationSlide = () => {
               <div>
                 <p className="fw-semibold">Client retention</p>
               </div>
-              {/* GrOptimize, IoBugOutline, BsStopwatch, BiSupport, MdGroups; */}
             </div>
           </div>
           <h3 className="pb-5">Top Executives</h3>
@@ -335,4 +303,4 @@ const FormvaidationSlide = () => {
   );
 };
 
-export default FormvaidationSlide;
+export default AmpleValidation;

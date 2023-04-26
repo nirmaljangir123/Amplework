@@ -2,27 +2,27 @@ import { Container } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
 import CardGroup from "react-bootstrap/CardGroup";
 
-import FooterBlock from "../../component/footer/FooterBlock";
 import Accessibility from "../../assets/pnglogoimage/Accessibility.png";
 import Adaptability from "../../assets/pnglogoimage/Adaptability.png";
 import calendar from "../../assets/pnglogoimage/calendar.png";
 import hourglass from "../../assets/pnglogoimage/hourglass.png";
 import partTime from "../../assets/pnglogoimage/partTime.png";
 import Scalability from "../../assets/pnglogoimage/Scalability.png";
-import FooterIso from "../../component/footer/FooterIso";
-import FooterDetails from "../../component/footer/FooterDetails";
-import Footertwatter from "../../component/footer/Footertwatter";
+
 import enterpriseBg from "../../assets/opicityimage/enterpriseBg.png";
-import { Welcome } from "../../component";
+import { Welcome } from "../..";
 
 import "../../component/footer/footer.css";
-import { FooterBlockMockup } from "../welcomepage/Mockup";
+import FooterIso from "./FooterIso";
+import FooterDetails from "./FooterDetails";
+import Footertwatter from "./Footertwatter";
+import FooterBlock from "./FooterBlock";
+import { FooterBlockMockup } from "../../mockup/Mockup";
 const Footer = () => {
   return (
     <>
       <div className="container footerbgcolor py-5">
         <FooterBlock varient={FooterBlockMockup} />
-        {console.log("cheak data",)}
         <div className="py-5">
           <FooterIso />
         </div>

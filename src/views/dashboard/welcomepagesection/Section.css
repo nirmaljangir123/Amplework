@@ -1,16 +1,25 @@
+.page-containe section {
+    padding: 80px 0px;
+}
+
+/* Home page css */
+.classmantaience {
+    background-image: url("../../../assets/pnglogoimage/homebgimage.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Dedicated developer css */
+
+/* 
+experience */
 .experiencebgcolor {
     background-color: rgb(22, 45, 66);
     color: #fff;
 }
 
-.page-containe section {
-    padding: 80px 0px;
-}
-
-.paddingbottom {
-    padding-bottom: 80px;
-}
-
+/* Activites  */
 .activtiesbgcolor {
     background-color:
         rgb(245, 245, 245);
@@ -26,8 +35,9 @@
     /* translate: -10px -10px 10px ; */
     transform: scale(1.12);
     transition-duration: 1s;
-
 }
+
+
 
 /* Types of Apps We Maintain At Amplework Software */
 .defaultshowdata {
@@ -62,24 +72,21 @@
 
 .imagedivheight {
     height: 120px;
-
 }
 
 
+/* App shape   */
 
-
-/* app shape */
 .appshapebgcolor {
     background-color: rgb(250, 250, 250);
 }
 
-.defaultshowdata11 
-{
+.defaultshowdata11 {
     display: block;
 }
-.hoveronmouse
-{
-    display:none;
+
+.hoveronmouse {
+    display: none;
 }
 
 .cardsborder1 {
@@ -92,22 +99,20 @@
     border-radius: 10px;
 }
 
-.cardsborder1:hover .defaultshowdata11 
-{
+.cardsborder1:hover .defaultshowdata11 {
     display: none;
 }
 
-.cardsborder1:hover .hoveronmouse 
-{
+.cardsborder1:hover .hoveronmouse {
     display: block;
 }
-.cardsborder1 :hover
-{
+
+.cardsborder1 :hover {
     background-color: rgb(6, 21, 114);
 }
-.cardsborder1:hover
-{
-border: 5px dashed rgb(6, 21, 114);
+
+.cardsborder1:hover {
+    border: 5px dashed rgb(6, 21, 114);
 }
 
 /* fasinating */
@@ -126,21 +131,20 @@ border: 5px dashed rgb(6, 21, 114);
 .cardhovers1 {
     box-shadow: 10px -5px 15px rgb(86, 86, 89);
 }
-.targethover
-{
-    margin-top: -100px ; 
+
+.targethover {
+    margin-top: -100px;
     margin-right: -50px;
 }
-.cardhovers1 :hover .targethover
-{
+
+.cardhovers1 :hover .targethover {
     translate: 0px 0px 0px;
     transform: scale(1.1);
     transition-duration: 1s;
 }
-.arrowhover
-{
-   
-}
+
+
+
 .cardhovers1:hover {
     background-color: rgb(3, 45, 226);
     transition-duration: 2s, 1s;
@@ -148,16 +152,10 @@ border: 5px dashed rgb(6, 21, 114);
     color: #fff;
 }
 
-
-
-
-/* number speak csss */
+/* speaks numbers  */
 .numberbgcolor {
     background-color: rgb(245, 247, 251);
 }
-
-
-
 
 
 /* searching */
@@ -165,6 +163,7 @@ border: 5px dashed rgb(6, 21, 114);
 .BsCheck2Circle1 {
     color: blue;
 }
+
 
 /* Frenqualy cssss */
 .frenqhovers1 {
@@ -189,6 +188,7 @@ border: 5px dashed rgb(6, 21, 114);
     transform: scale(1.2);
     transition-duration: 1s, 1s;
 }
+
 
 /* proudely case */
 .prowdbgcolor {
@@ -243,4 +243,27 @@ input:focus {
 
     list-style-image: linear-gradient(rgb(65, 5, 244), blue);
     list-style-type: circle;
+}
+/*  AmpleValidation*/
+.formfieldcolor
+{
+    background-color: rgb(243, 245, 255);
+    border: 0;
+    color:rgb(146, 144, 144);
+    font-size: 15px;
+}
+.overflowclass
+{
+    display: flex;
+    overflow: auto;
+    overflow-x: scroll;
+}
+.recaptchshadow {
+    box-shadow: 10px 5px 10px rgb(166, 167, 194);
+
+}
+.paddingoverflow
+{
+   padding-right: 20px;
+    
 }

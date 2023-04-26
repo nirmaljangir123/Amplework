@@ -1,70 +1,62 @@
 import {
-  GrIteration,
-  GrStorage,
-  GrTestDesktop,
-  GrSettingsOption,
-  GrDocumentPerformance,
-  GrTechnology,
-  GrDocumentTest,
-  GrSystem,
-  GrCloudSoftware,
-  GrVirtualMachine,
-  GrOptimize,
-} from "react-icons/gr";
-import { IoBugOutline } from "react-icons/io";
-import { BsBug, BsStopwatch } from "react-icons/bs";
-import { BiSupport } from "react-icons/bi";
-import { MdOutlineSettingsRemote, MdGroups } from "react-icons/md";
-import {
-  FcSmartphoneTablet,
-  FcTabletAndroid,
-  FcPhoneAndroid,
-  FcMultipleSmartphones,
-  FcIpad,
-  FcOrgUnit,
-} from "react-icons/fc";
-import { FiTarget } from "react-icons/fi";
-import { Fa500Px, FaBuffer } from "react-icons/fa";
-import { IconName } from "react-icons/rx";
-// FaLayerGroup,GrOptimize,MdGroups,BsStopwatch,Fa500Px
-// png image
-import Applock from "../../assets/pnglogoimage/Applock.png";
-import Appbug from "../../assets/pnglogoimage/Appbug.png";
-import Apparrow from "../../assets/pnglogoimage/Apparrow.png";
-import Appgrouth from "../../assets/pnglogoimage/Approuth.png";
-import Apprecycle from "../../assets/pnglogoimage/Apprecycle.png";
-import Appstorgae from "../../assets/pnglogoimage/Appstorage.png";
-import Nirmal from "../../assets/Developerphotos/nirmal.jpg";
-import Jitu from "../../assets/Developerphotos/jitu.jpg";
-import Rajander from "../../assets/Developerphotos/rajander.jpg";
-import Rahul from "../../assets/Developerphotos/rahul.jpg";
-import MobileDev from "../../assets/pnglogoimage/Mobile-Devops-Development.png";
-import chatbot from "../../assets/pnglogoimage/Chatbots-in-Healthcare.png";
-import Foldmobile from "../../assets/pnglogoimage/Foldable-Smart-Phone-Mobile-App-Development.png";
-import pksir from "../../assets/Developerphotos/pksir.png";
-import sksir from "../../assets/Developerphotos/sksir.png";
-import supermaam from "../../assets/Developerphotos/novamaam.png";
-import blacktarget from "../../assets/opicityimage/blacktarget.png";
-import whitetarget from "../../assets/opicityimage/lighttarget.png";
-import target from "../../assets/opicityimage/Target.png";
-//png image
-import cheak from "../../assets/opicityimage/cheak.png";
-import anti from "../../assets/opicityimage/anti.png";
-import good from "../../assets/opicityimage/good.png";
-import layer from "../../assets/opicityimage/layer.png";
-import remote from "../../assets/opicityimage/remotecontrol.png";
-import support from "../../assets/opicityimage/support.png";
-import version from "../../assets/opicityimage/version.png";
+    GrIteration,
+    GrStorage,
+    GrTestDesktop,
+    GrSettingsOption,
+    GrDocumentPerformance,
+    GrTechnology,
+    GrDocumentTest,
+    GrSystem,
+    GrCloudSoftware,
+    GrVirtualMachine,
+    GrOptimize,
+  } from "react-icons/gr";
+  import { IoBugOutline } from "react-icons/io";
+  import { BsBug, BsStopwatch } from "react-icons/bs";
+  import { MdOutlineSettingsRemote, MdGroups } from "react-icons/md";
 
-// imges
-import groupsetting from "../../assets/imges/groupsetting.png";
-import grouppc from "../../assets/imges/grouppc.png";
-import groupanti from "../../assets/imges/groupanti.png";
-import grouptop from "../../assets/imges/grouptop.png";
-import groupsqure from "../../assets/imges/groupsqure.png";
-import groupphone from "../../assets/imges/groupphone.png";
-import groupchip from "../../assets/imges/groupchip.png";
-import groupgames from "../../assets/imges/groupgames.png";
+  import { Fa500Px, FaBuffer } from "react-icons/fa";
+  // FaLayerGroup,GrOptimize,MdGroups,BsStopwatch,Fa500Px
+  // png image
+import Applock from "../assets/pnglogoimage/Applock.png";
+import Appbug from "../assets/pnglogoimage/Appbug.png";
+import Apparrow from "../assets/pnglogoimage/Apparrow.png";
+import Appgrouth from "../assets/pnglogoimage/Approuth.png";
+import Apprecycle from "../assets/pnglogoimage/Apprecycle.png";
+import Appstorgae from "../assets/pnglogoimage/Appstorage.png";
+//   import Nirmal from "../../assets/Developerphotos/nirmal.jpg";
+//   import Jitu from "../../assets/Developerphotos/jitu.jpg";
+//   import Rajander from "../../assets/Developerphotos/rajander.jpg";
+//   import Rahul from "../../assets/Developerphotos/rahul.jpg";
+  import anrub from '../assets/Developerphotos/arunab-verma.jpg'
+  import manishsir from '../assets/Developerphotos/manishsir - Copy.jpeg'
+  import MobileDev from "../assets/pnglogoimage/Mobile-Devops-Development.png";
+  import chatbot from "../assets/pnglogoimage/Chatbots-in-Healthcare.png";
+  import Foldmobile from "../assets/pnglogoimage/Foldable-Smart-Phone-Mobile-App-Development.png";
+  import pksir from "../assets/Developerphotos/pksir.png";
+  import sksir from "../assets/Developerphotos/sksir.png";
+  import prakash from '../assets/Developerphotos/parkashsir.png'
+  import santoash from "../assets/Developerphotos/santoshsir.png"
+  import supermaam from "../assets/Developerphotos/novamaam.png";
+import blacktarget from "../assets/opicityimage/blacktarget.png";
+import whitetarget from "../assets/opicityimage/lighttarget.png";
+import target from "../assets/opicityimage/Target.png";
+//png image
+import cheak from "../assets/opicityimage/cheak.png";
+import anti from "../assets/opicityimage/anti.png";
+import good from "../assets/opicityimage/good.png";
+
+import version from "../assets/opicityimage/version.png";
+
+// imges;
+import groupsetting from "../assets/imges/groupsetting.png";
+import grouppc from "../assets/imges/grouppc.png";
+import groupanti from "../assets/imges/groupanti.png";
+import grouptop from "../assets/imges/grouptop.png";
+import groupsqure from "../assets/imges/groupsqure.png";
+import groupphone from "../assets/imges/groupphone.png";
+import groupchip from "../assets/imges/groupchip.png";
+import groupgames from "../assets/imges/groupgames.png";
 
 export const Active = [
   {
@@ -254,12 +246,6 @@ export const CardsdataArrow = [
 
 export const FrequentlyAsked = [
   {
-    key: 0,
-    text: "How skilled are your dedicated developers?",
-    smalltext:
-      "At Amplework, we feature a team of highly skilled and experienced dedicated developers having several years of expertise in the field of mobile app development solutions.",
-  },
-  {
     key: 1,
     text: "How skilled are your dedicated developers?",
     smalltext:
@@ -301,27 +287,33 @@ export const FrequentlyAsked = [
     smalltext:
       "At Amplework, we feature a team of highly skilled and experienced dedicated developers having several years of expertise in the field of mobile app development solutions.",
   },
+  {
+    key: 8,
+    text: "How skilled are your dedicated developers?",
+    smalltext:
+      "At Amplework, we feature a team of highly skilled and experienced dedicated developers having several years of expertise in the field of mobile app development solutions.",
+  },
 ];
 
 export const TrustedDeveloper = [
   {
-    img: Nirmal,
-    name: "Nirmal",
+    img: prakash,
+    name: "Prakash sir",
     // job:"sec Soft.Delp"
   },
   {
-    img: Jitu,
-    name: "Jitender",
+    img: santoash,
+    name: "Santosh sir",
     // job:"sec Soft.Delp"
   },
   {
-    img: Rajander,
-    name: "Rajander ",
+    img: manishsir,
+    name: "Manish sir ",
     // job:"sec Soft.Delp"
   },
   {
-    img: Rahul,
-    name: "Rahul ",
+    img: anrub,
+    name: "Anrub sir ",
     // job:"sec Soft.Delp"
   },
 ];
@@ -340,7 +332,7 @@ export const QuickStart = [
   { bigtext: "92%", ican: BsStopwatch(), text: "Client retention" },
   {
     bigtext: "$200M+",
-    ican: GrOptimize(),
+    // ican: GrOptimize(),
     text: "Our clients overall revenue",
   },
   { bigtext: "1M+", ican: Fa500Px(), text: "Work hours" },

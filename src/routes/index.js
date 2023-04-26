@@ -1,11 +1,8 @@
 import React from "react";
-import { WelcomePage } from "../views";
-import Footer from "../views/footer/Footer";
-// import TopNavbar from '../component/header/Navbar'
-
-const AllRoutes = [
-
-  { path: "/welcome", name: "welcome", element: <WelcomePage /> },
-  { path: "/footer", name: "footer", element: <Footer /> },
+import Welcome from "../views/dashboard/Welcome";
+// import Welcome from '../views/index'
+const routes = [
+  {path:'/welcomepage',exact:true,name:'welcome',element:Welcome},
 ];
-export default AllRoutes;
+
+export default routes;
