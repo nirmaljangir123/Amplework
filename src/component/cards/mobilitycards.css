@@ -1,0 +1,39 @@
+.imageposition {
+    display: flex;
+}
+
+.textposition {
+    text-align: left;
+}
+
+.smalltextposition {
+    text-align: left;
+}
+
+.wordspacingcards {
+    padding-left: 10px;
+}
+
+.textflexstart {
+    text-align: left;
+    font-size: 15px;
+    width: 90%;
+    padding-top: 0px;
+}
+
+/* notched corner */
+.notchedcorner {
+    background-color: rgb(236, 248, 233);
+    position: relative;
+    box-shadow: 15px 10px 15px darkgray;
+
+}
+.notchedcorner:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-top: 60px solid rgb(23, 32, 210);
+    border-left: 60px solid rgb(236, 248, 233);
+
+}

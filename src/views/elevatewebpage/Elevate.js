@@ -13,6 +13,9 @@ const Elevate = () => {
           bgimage={Elevatebgimage}
         />
       </div>
+      <div>
+        
+      </div>
     </>
   );
 };

@@ -13,7 +13,7 @@
     background-image: url('../../../assets/opicityimage/enterpriseBg.png');
     background-repeat: no-repeat;
     background-position: right 100%;
-    background-size:10rem;
+    background-size: 10rem;
 }
 
 .blockbluetext {
@@ -22,10 +22,80 @@
 
 .transcard {
     /* background-color: rgba(38, 127, 216, 0.8); */
-background-image: url('../../../assets/opicityimage/good.png');
-background-repeat: no-repeat;
-background-position: right 100%;
-background-size:6rem;
-color: #fff;
+    background-image: url('../../../assets/opicityimage/good.png');
+    background-repeat: no-repeat;
+    background-position: right 100%;
+    background-size: 6rem;
+    color: #fff;
 
+}
+
+/* footer list  */
+.listtext {
+    color: #fff;
+    padding-left: 30px;
+}
+
+.textlistul {
+    list-style: none;
+
+}
+
+.textlistul li {
+    color: rgb(155, 149, 149);
+    font-weight: 500;
+}
+
+.textlistul :hover {
+    color: rgb(245, 164,    8);
+    /* font-weight: 500; */
+
+}
+/* footer footerbar  */
+
+.footerspace li {
+    font-size: large;
+    list-style: none;
+    padding: 10px;
+  }
+  .footerspace {
+    font-size: 30px;
+    padding: 10px;
+    justify-content: space-around;
+    color: aliceblue;
+  }
+  .footerspace li:hover
+  {
+    color:darkorange;
+  
+  }
+  .Aihover:hover
+  {
+    color:darkorange;
+  
+  }
+  .cardbgimage {
+    background-color: rgb(6, 7, 63);
+    color: aliceblue;
+    border: 2px solid blue;
+  }
+  .cardbgimage:hover {
+    background-color: rgba(2, 16, 202, 0.877);
+  }
+
+  /* last footer bar */
+.footerspace1 {
+
+  justify-content: space-around;
+  color: aliceblue;
+  font-weight: bold;
+}
+.footerspace1 li {
+list-style-type: none;
+}
+.footerspace2 li
+{
+  list-style-type: none;
+  padding:0px 10px ;
+  color: #fff;
 }

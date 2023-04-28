@@ -1,0 +1,15 @@
+.footerlistbgcolor {
+    padding: 80px 0px;
+    /* background-image: url('../../assets/opicityimage/footerlistbgcolor.png');
+    background-size: contain;
+    background-repeat: no-repeat; */
+    background-color: rgb(8, 8, 7);
+}
+
+.footerbarbgcolor {
+    background-color: rgb(112, 112, 112);
+}
+
+.footerbarbgcolor1 {
+    background-color: rgb(245, 165, 10);
+}

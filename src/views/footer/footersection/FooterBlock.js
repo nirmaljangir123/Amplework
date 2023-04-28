@@ -127,7 +127,7 @@ const FooterBlock = () => {
             </Card.Body>
           </Card>
         </CardGroup>
-        <div className="row">
+        <div className="row pt-5">
           <div className="col-sm-12 col-lg-5">
             <img
               src={amplelogo}
@@ -136,33 +136,49 @@ const FooterBlock = () => {
               className="img-fluid"
             />
           </div>
-          <div className=" col-lg-7 bg-danger">
+          <div className=" col-lg-7 text-center">
             <div className="row text-light ">
-              <div className="col-sm-6  col-md-6 col-lg-3 ">
-                <img src={iso} alt="no pic" width={120} className="img-fluid" />
-                <p className="w-100 fw-bold"> ISO-27001 software security</p>
+              <div className="col-sm-12  col-md-6 col-lg-6 d-flex m-auto">
+                <div>
+                  <img
+                    src={iso}
+                    alt="no pic"
+                    // width={120}
+                    className="img-fluid"
+                  />
+                  <p className=" fw-bold"> ISO-27001 software security</p>
+                </div>
+                <div>
+                  <img
+                    src={dbregister}
+                    alt="no pic"
+                    // width={120}
+                    className="img-fluid"
+                  />
+                  <p className=" fw-bold">Dun & broadcast Varified</p>
+                </div>
               </div>
-              <div className="col-sm-6 col-md-6  col-lg-3 ">
-                <img
-                  src={dbregister}
-                  alt="no pic"
-                  width={120}
-                  className="img-fluid"
-                />
-                <p className="w-100 fw-bold">Dun & broadcast Varified</p>
-              </div>
-              <div className="col-sm-6 col-md-6  col-lg-3 ">
-                <img
-                  src={googlecloud}
-                  alt="no pic"
-                  width={120}
-                  className="img-fluid"
-                />
-                <p className="w-100 fw-bold">Google cloud partner</p>
-              </div>
-              <div className="col-sm-6 col-md-6 col-lg-3 ">
-                <img src={aws} alt="no pic" width={120} className="img-fluid" />
-                <p className="w-100 fw-bold">Aws consaulting partner</p>
+              <div className="col-sm-12 col-md-6  col-lg-6 d-flex m-auto">
+                <div>
+                  <img
+                    src={googlecloud}
+                    alt="no pic"
+                    // width={120}
+                    className="img-fluid"
+                  />
+                  <p className=" fw-bold">Google cloud partner</p>
+                </div>
+                <div>
+                  <div className="">
+                    <img
+                      src={aws}
+                      alt="no pic"
+                      // width={120}
+                      className="img-fluid"
+                    />
+                    <p className="fw-bold">Aws consaulting partner</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
