@@ -171,7 +171,7 @@ function FooterDetails() {
               </li>
               <li
                 id="menu-item-93"
-                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-93"
+                className="menu-item menu-item-type-post_type menu-item-object-page menu-item-93"
               >
                 <a href="https://www.amplework.com/hire-react-native-developer/">
                   Hire React Native Developer

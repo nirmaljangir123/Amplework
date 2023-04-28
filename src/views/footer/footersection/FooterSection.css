@@ -1,0 +1,31 @@
+.footerbgcolor {
+    padding: 80px 0px;
+    background-color: rgb(06, 10, 100);
+    background-image: url('../../../assets/opicityimage/footerblockbg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.blockblue {
+    background-color: rgb(38, 5, 255);
+    /* background-color: yellow; */
+    background-image: url('../../../assets/opicityimage/enterpriseBg.png');
+    background-repeat: no-repeat;
+    background-position: right 100%;
+    background-size:10rem;
+}
+
+.blockbluetext {
+    color: #fff;
+}
+
+.transcard {
+    /* background-color: rgba(38, 127, 216, 0.8); */
+background-image: url('../../../assets/opicityimage/good.png');
+background-repeat: no-repeat;
+background-position: right 100%;
+background-size:6rem;
+color: #fff;
+
+}

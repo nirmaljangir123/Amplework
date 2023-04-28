@@ -6,14 +6,17 @@ import DefaultLayout from "./layout/DefaultLayout";
 import { AppContent } from "./appcontant/Appcontent";
 // import { Welcome } from "./views";
 
+//react strap bootstrap css import  
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 function App() {
   return (
     <BrowserRouter>
-        <Routes>
-          <Route exact path="/404" name="page 404" element={<Page404 />} />
-          <Route exact path="/500" name="page 500" element={<Page500 />} />
-        </Routes>
-        <DefaultLayout/>
+      <Routes>
+        <Route exact path="/404" name="page 404" element={<Page404 />} />
+        <Route exact path="/500" name="page 500" element={<Page500 />} />
+        <Route exact path="*" name="default page" element={<DefaultLayout />} />
+      </Routes>
     </BrowserRouter>
   );
 }

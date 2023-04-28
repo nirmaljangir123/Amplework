@@ -7,7 +7,7 @@ import { useState } from "react";
 
 const CardsComponent = (props) => {
   const { data, text, smalltext } = props;
-  console.warn("-------->propsdata", props);
+  // console.warn("-------->propsdata", props);
 
   return (
     // <Card className='bg-info'>

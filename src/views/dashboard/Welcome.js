@@ -24,9 +24,7 @@ const Welcome = () => {
   return (
     <>
       <div className="page-containe">
-        <section className="classmantaience">
-          <Homepage />
-        </section>
+        <Homepage />
         <section>
           <DedicatedDeveloper />
         </section>
@@ -84,11 +82,11 @@ const Welcome = () => {
           <Sweatcoin />
         </section>
         <section className="shokesbgcolor">
-            <Productidea/>
+          <Productidea />
         </section>
         <section className="formvalidation p-0">
-            <AmpleValidation/>
-        </section>    
+          <AmpleValidation />
+        </section>
       </div>
     </>
   );

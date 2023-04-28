@@ -4,6 +4,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import amplelogo from "../../assets/logo/amplworkLogo.png";
 import "../header/Allcss.css";
+import { NavLink as ReactLink } from "react-router-dom";
 const TopNavbar = (props) => {
   return (
     <Navbar collapseOnSelect expand="lg"  variant="dark" className="">
@@ -11,16 +12,16 @@ const TopNavbar = (props) => {
         <Navbar.Brand href="#home">
           <img src={amplelogo} width="230px" />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" className=""/>
         <Navbar.Collapse id="responsive-navbar-nav" className="">
           <Nav className="navbarhover fw-semibold ms-auto ">
-            <Nav.Link href="#action1" className="text-light">
+            <Nav.Link  tag={ReactLink} to="/elevate" className="text-light">
               What we are
             </Nav.Link>
-            <Nav.Link href="#action1" className="text-light">
+            <Nav.Link tag={ReactLink} to="/elevate" className="text-light">
               What we do
             </Nav.Link>
-            <Nav.Link href="#action2" className="text-light">
+            {/* <Nav.Link href="#action2" className="text-light">
               Our culture
             </Nav.Link>
             <Nav.Link href="#action1" className="text-light">
@@ -34,8 +35,8 @@ const TopNavbar = (props) => {
             </Nav.Link>
             <Nav.Link href="#action2" className="text-light">
               Contact Us
-            </Nav.Link>
-            <Button variant="outline-warning px-2 py-1 rounded-pill mx-2">
+            </Nav.Link> */}
+            <Button variant="outline-warning px-4 py-1 rounded-pill fw-semibold">
               INQUERY NOW
             </Button>
           </Nav>

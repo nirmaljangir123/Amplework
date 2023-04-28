@@ -1,6 +1,6 @@
 import React, { Suspense } from "react";
 import { Navigate, Route, Routes } from "react-router-dom";
-import routes from "../routes/index";
+import routes from "../routes";
 // routes config
 
 export const AppContent = () => {
@@ -16,7 +16,7 @@ export const AppContent = () => {
                 path={route.path}
                 exact={route.exact}
                 name={route.name}
-                element={<route.element/>}
+                element={route.element}
               />
             )
           );

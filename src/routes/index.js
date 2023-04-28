@@ -1,8 +1,10 @@
 import React from "react";
 import Welcome from "../views/dashboard/Welcome";
-// import Welcome from '../views/index'
+import Elevate from "../views/elevatewebpage/Elevate";
+
 const routes = [
-  {path:'/welcomepage',exact:true,name:'welcome',element:Welcome},
+  { path: "/welcome", exact: true, name: "welcome", element: <Welcome/> },
+  { path: "/elevate", exact: true, name: "elevate", element: <Elevate /> },
 ];
 
 export default routes;
