@@ -1,0 +1,59 @@
+.borderblock {
+    padding: 25px;
+    border: 1px solid #6198ee;
+    border-top: none;
+}
+
+.borderblock1 {
+    border-left: 1px solid #6198ee;
+    border-right: 1px solid #6198ee;
+    padding: 25px;
+}
+
+/* 4 Category Phases of Enterprise Mobility Management Software */
+.bgimgblock {
+    background-image: url('../../../assets/opicityimage/dotted-circle.png');
+    /* background-color: blueviolet; */
+    background-repeat: no-repeat;
+    background-position: left top;
+    position: relative;
+}
+
+.objectimageset {
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    padding: 100px;
+
+}
+
+.contains {
+    display: flex;
+    align-items: center;
+    /* background-color: cadetblue; */
+}
+
+.contains h1
+ {
+    padding-right: 15px;
+    font-size: 140px;
+    font-weight: 400;
+    color: #fff;
+    -webkit-text-stroke: 2px #1d73f8;
+    /* background-color: aquamarine; */
+}
+.contains h3
+ {
+    /* margin-bottom: 10px; */
+    font-weight: 500;
+    /* line-height: 1.5; */
+    line-height: 2.0;
+}
+.contains p
+ {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+ 
+ /* Brands we've collaborated with */
+ 

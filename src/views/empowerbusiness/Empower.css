@@ -1,10 +1,17 @@
-.page-containe section
-{
+.page-containe section {
     padding: 80px 0px;
 }
 
 /* Innovate feature */
-.innovatesection
-{
+.innovatesection {
     background-color: rgb(245, 245, 245);
+}
+
+.Reasionbackimage {
+    background-image: url('../../assets/opicityimage/top2.png'), url('../../assets/opicityimage/world.png'), url('../../assets/opicityimage/top1.png');
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: left top, center center, right bottom;
+    background-color: rgb(29, 115, 248);
+    background-size: 400px;
+    /* background-size:; */
 }

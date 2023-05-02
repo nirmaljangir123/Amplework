@@ -2,10 +2,16 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 import "../cards/mobilitycards.css";
 const MobilityCards = (props) => {
-  const { img, text, smalltext, bgcolor,size } = props;
+  const { img, text, smalltext, bgcolor, size } = props;
   return (
-    
-    <Card style={{ backgroundColor: props.bgcolor,color:"white" }}>
+    <Card
+      style={{
+        backgroundColor: props.bgcolor,
+        color: "white",
+        height: "100%",
+       
+      }}
+    >
       <Card.Body className="textcolor">
         <div className="imageposition">
           <img src={props.img} alt="no pic" width={props.size} />
