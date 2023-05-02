@@ -1,7 +1,7 @@
 import React from 'react'
 import { Card } from 'react-bootstrap'
 import { Maintain } from '../../../mockup/Mockup'
-
+// import '../../../views/dashboard/welcomepagesection/section.css'
 const Maintaine = () => {
   return (
     <div className="container">

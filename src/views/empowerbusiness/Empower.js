@@ -6,6 +6,9 @@ import EnchanseRoi from "./empowersection/EnchanseRoi";
 import ReasonAmplework from "./empowersection/ReasonAmplework";
 import CategeryPhases from "./empowersection/CategeryPhases";
 import BrandsCollabrate from "./empowersection/BrandsCollabrate";
+import Tranforation from "./empowersection/Tranforation";
+import OperationalCost from "./empowersection/OperationalCost";
+import PshudoClass11 from "./empowersection/Pusdo";
 
 const Empower = () => {
   return (
@@ -20,11 +23,20 @@ const Empower = () => {
       <section className="Reasionbackimage">
         <ReasonAmplework />
       </section>
-      <section >
-        <CategeryPhases/>
+      <section>
+        <CategeryPhases />
+      </section>
+      <section className="brandebgcolor">
+        <BrandsCollabrate />
       </section>
       <section>
-        <BrandsCollabrate/>
+        <Tranforation />
+      </section>
+      <section>
+        <OperationalCost />
+      </section>
+      <section>
+        <PshudoClass11/>
       </section>
     </div>
   );

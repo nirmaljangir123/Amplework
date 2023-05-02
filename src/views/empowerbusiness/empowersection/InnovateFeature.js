@@ -45,6 +45,7 @@ const InnovateFeature = () => {
                   text="5x Efficiency Improvement"
                   smalltext="Our solutions can help improve efficiency by up to 5x times that resulting in reduced costs and increased productivity."
                   bgcolor="rgb(0,152,249)"
+                  
                 />
               </div>
               <div className=" col-lg-6">

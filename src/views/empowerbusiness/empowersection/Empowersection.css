@@ -16,7 +16,7 @@
     /* background-color: blueviolet; */
     background-repeat: no-repeat;
     background-position: left top;
-    position: relative;
+    position: relative; 
 }
 
 .objectimageset {
@@ -33,8 +33,7 @@
     /* background-color: cadetblue; */
 }
 
-.contains h1
- {
+.contains h1 {
     padding-right: 15px;
     font-size: 140px;
     font-weight: 400;
@@ -42,18 +41,96 @@
     -webkit-text-stroke: 2px #1d73f8;
     /* background-color: aquamarine; */
 }
-.contains h3
- {
+
+.contains h3 {
     /* margin-bottom: 10px; */
     font-weight: 500;
     /* line-height: 1.5; */
     line-height: 2.0;
 }
-.contains p
- {
+
+.contains p {
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
 }
- 
- /* Brands we've collaborated with */
- 
+
+
+/* Brands we've collaborated with */
+.defaulttransport {
+    display: block;
+}
+
+.transimageblock {
+    /* background-color: chartreuse; */
+    width: 100%;
+    height: 120px;
+}
+
+.transporthover {
+    display: none;
+}
+
+.cardsonhover:hover .defaulttransport {
+    display: none;
+}
+
+.cardsonhover:hover .transporthover {
+    display: block;
+}
+
+.cardsonhover {
+    box-shadow: 1px 1px 10px darkslategrey;
+}
+
+.cardsonhover:hover {
+    background-color: rgb(3, 45, 226);
+    color: #FFF;
+    translate: -10px -20px;
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+/* Our Process For Enterprise Mobile App Development Process */
+.toolboxrequirment::before {
+    content: "";
+    border: dashed 1px #ffe1e1;
+    width: 1px;
+    position: absolute;
+    top: 0;
+    left: -13px;
+    bottom: 0;
+    background: none !important;
+}
+
+.bgone {
+    background-color: #ffe1e1;
+    color: #f06466;
+    position: absolute;
+    left: -59px;
+    top: -1px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 23px;
+    color: #f06466;
+}
+
+.toolboxrequirment::after {
+    content: "";
+    width: 9px;
+    height: 9px;
+    border-radius: 50px;
+    position: absolute;
+    bottom: 30px;
+    left: -17px;
+    bottom: 0;
+    background: #ffe1e1;
+}
+
+.main-box {
+    margin: 0 0 15px 40px;
+
+}
+

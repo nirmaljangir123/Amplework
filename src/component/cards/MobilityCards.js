@@ -9,8 +9,7 @@ const MobilityCards = (props) => {
         backgroundColor: props.bgcolor,
         color: "white",
         height: "100%",
-       
-      }}
+      }} className=""
     >
       <Card.Body className="textcolor">
         <div className="imageposition">

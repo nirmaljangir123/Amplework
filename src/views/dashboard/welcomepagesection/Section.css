@@ -55,7 +55,7 @@ experience */
     background-color: rgb(3, 45, 226);
     translate: -50px -30px -10px;
     transform: scale(1.1);
-    transition-duration: 1s;
+    /* transition-duration: 1s; */
     /* padding: 0px 1px; */
 }
 
