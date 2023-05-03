@@ -7,8 +7,10 @@ import ReasonAmplework from "./empowersection/ReasonAmplework";
 import CategeryPhases from "./empowersection/CategeryPhases";
 import BrandsCollabrate from "./empowersection/BrandsCollabrate";
 import Tranforation from "./empowersection/Tranforation";
-import OperationalCost from "./empowersection/OperationalCost";
-import PshudoClass11 from "./empowersection/Pusdo";
+import ProcessMobileApp from "./empowersection/ProcessMobileApp";
+import ProcessMobileDevelopment from "./empowersection/ProcessMobileDevelopment";
+import CuttingEdage from "./empowersection/CuttingEdage";
+import FullstackDev from "../dashboard/welcomepagesection/FullstackDev";
 
 const Empower = () => {
   return (
@@ -32,12 +34,17 @@ const Empower = () => {
       <section>
         <Tranforation />
       </section>
+      {/* <section> 
+        <ProcessMobileApp />
+        <ProcessMobileDevelopment/>
+      </section> */}
       <section>
-        <OperationalCost />
+        <CuttingEdage/>
       </section>
       <section>
-        <PshudoClass11/>
+        <FullstackDev/>
       </section>
+      
     </div>
   );
 };

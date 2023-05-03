@@ -4,7 +4,7 @@ import Elevate from "../views/elevatewebpage/Elevate";
 import Empower from "../views/empowerbusiness/Empower";
 
 const routes = [
-  { path: "/welcome", exact: true, name: "welcome", element: <Welcome /> },
+  { path: "/", exact: true, name: "welcome", element: <Welcome /> },
   { path: "/elevate", exact: true, name: "elevate", element: <Elevate /> },
   { path: "/empower", exact: true, name: "empower", element: <Empower /> },
 ];

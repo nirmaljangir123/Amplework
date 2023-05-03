@@ -1,0 +1,59 @@
+.backcolor {
+    background-color: rgb(154, 172, 249);
+    color: #1b04e8;
+    font-size: 20px
+}
+.backcolor:hover
+{
+    background-color: rgb(0, 48, 255);
+    color: white;
+}
+
+.btncss {
+    /* rounded-pill px-3 m-1 */
+    padding: 5px 15px;
+    margin:3px;
+    border-radius: 20px;
+    border: 2px solid blue;
+    font-size: 18px;
+}
+
+.btncss:hover {
+    background-color:rgb(245, 163, 3);
+    color: #FFF;
+    border: 2px solid blue;
+    /* font-size: 50px; */
+}
+.backcolor1 {
+    background-color: rgb(234,243, 254);
+    color: #1b04e8;
+    font-size: 20px
+}
+.backcolor1:hover
+{
+    background-color: rgb(0, 48, 255);
+    color: white;
+}
+.backcolor2 {
+    background-color: rgb(233,238, 255);
+        color: #1b04e8;
+
+    font-size: 20px
+}
+.backcolor2:hover
+{
+    background-color: rgb(0, 48, 255);
+    color: white;
+}
+.backcolor3 {
+    background-color: rgb(223,238, 255);
+        color: #1b04e8;
+
+    font-size: 20px
+}
+.backcolor3:hover
+{
+    background-color: rgb(0, 48, 255);
+    color: white;
+}
+
