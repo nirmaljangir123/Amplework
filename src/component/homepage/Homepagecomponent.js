@@ -3,13 +3,16 @@ import { Button } from "react-bootstrap";
 import { HomeButton } from "../button/Button";
 
 const Homepagecomponent = (props) => {
-  const { smalltext, text, btn, bgimage } = props;
+  // console.warn("props adata ------>",props.propsdata.smalltext);
+  const { smalltext, text, btn, bgimage } = props.propsdata;
+  // const { smalltext, text, btn, bgimage } = props.propsdata;
 
-  console.log("btn----", btn);
+  console.log("btn----", props);
   return (
     <section
       style={{
         backgroundImage: `Url(${bgimage})`,
+
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         backgroundPosition: "center",

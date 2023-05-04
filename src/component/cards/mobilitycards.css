@@ -29,7 +29,10 @@
     margin-bottom: 10px;
 
 }
-
+.notchedcorner:before:hover
+{
+    background-color: chartreuse;
+}
 .notchedcorner:before {
     content: '';
     position: absolute;
